@@ -1,0 +1,562 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+  &:hover
+    text-decoration: none
+
+button
+  outline: none
+  transition: .3s ease
+  box-shadow: none
+  box-sizing: border-box
+  cursor: pointer
+  padding: 0
+  border: none
+    radius: 0
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 15.5px
+  border-radius: 5px
+  letter-spacing: 0.78px
+
+.btn_red
+  color: #fff
+  background: $accent
+  &:hover
+    box-shadow: 0 0 10px rgba(#000,.3)
+
+.color_red
+  color: $accent
+
+.container
+  margin: 0 auto
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  max-width: 1600px
+  width: 100%
+  padding: 0 50px
+
+label
+  display: block
+
+input
+  outline: none
+  padding: 0 10px 0 30px
+  box-sizing: border-box
+  box-shadow: none
+  width: 100%
+  font-size: 17.5px
+  height: 67px
+  border: solid 1px rgba(#000000, .15)
+    radius: 5px
+  color: rgba(34, 34, 34, 0.5)
+  font-family: $default-font
+  font-weight: 100
+  &::placeholder
+    color: rgba(34, 34, 34, 0.5)
+
+.w-100
+  width: 100%
+
+.d-flex
+  display: flex
+  flex-wrap: wrap
+
+.flex-column
+  flex-direction: column
+
+.align-items-start
+  align-items: flex-start
+
+.align-items-center
+  align-items: center
+
+.col-14
+  width: 14.2%
+
+.col-50
+  width: 50%
+
+.row
+  width: calc(100% + 30px)
+  margin: 0 -15px
+
+
+//menu
+.main-menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 auto 0 104px
+
+.main-menu__item
+  margin: 0 42px 0 0
+  &:last-child
+    margin: 0
+
+.main-menu__links
+  color: #222222
+  font-size: 19.5px
+  font-weight: 500
+  letter-spacing: 0.98px
+  &:hover
+    color: $accent
+
+
+
+
+//header
+header
+  margin: 0 0 20px
+  border-bottom: 1px solid #e6e6e6
+  .container
+    align-items: center
+    justify-content: space-between
+
+.header__top
+  border-bottom: solid 1px #e7e7e7
+  background: #f7f7f7
+  padding: 8px 0 12px
+
+.location
+  font-size: 19.5px
+  font-weight: 700
+
+.header__links
+  display: flex
+  align-items: center
+  color: #212121
+  font-size: 20px
+  font-weight: bold
+  letter-spacing: 1px
+  padding: 10px 25px 11px 0
+  margin: 0 20px 0 0
+  border:
+    right: 1px solid rgba(#d4d4d4, .67)
+  &:last-child
+    border: none
+    padding-right: 0
+    margin: 0
+  &:hover
+    color: $accent
+
+.header__links_icon
+  width: 20px
+  margin: 0 14px 0 0
+
+.header__center
+  padding: 35px 0
+  border-bottom: 1px solid #e6e6e6
+
+.social
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.social__item
+  margin: 0 10px 0 0
+  &:last-child
+    margin: 0
+
+.social__links
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 36px
+  height: 36px
+  &:hover
+    opacity: .8
+
+.logo
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  letter-spacing: 0.9px
+  font-size: 18px
+  font-weight: bold
+  color: #000
+
+.logo__img
+  max-width: 282px
+  width: 100%
+  margin: 0 auto 30px
+
+.description-company
+  font-size: 15.5px
+  font-weight: bold
+  text-align: center
+  letter-spacing: 0.78px
+  max-width: 358px
+  width: 100%
+
+.header__center_wrapper
+  padding: 0 0 0 30px
+  width: calc(100% - 282px)
+
+.header__center_line
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.header__center_top
+  padding: 0 0 0 20px
+  margin: 0 0 23px
+
+.header__box
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  span
+    color: rgba(93, 93, 93, 0.79)
+    font-size: 18px
+    font-weight: 500
+    letter-spacing: 0.9px
+    margin: 0 0 5px
+    display: inline-block
+
+.phone
+  color: #222222
+  font-size: 20px
+  font-weight: bold
+  letter-spacing: 1px
+
+.basket__wrapper
+  display: flex
+  align-items: flex-start
+  margin: 0 0 0 80px
+
+.basket__box
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  color: #222222
+  font-size: 19px
+  font-weight: 500
+  letter-spacing: 0.95px
+
+
+.basket__box_sum
+  font-size: 19px
+  font-weight: 900
+  margin: 5px 0 0
+  color: #222
+
+.basket__box_sum_currency
+  font-family: $myriad
+
+.basket__icon
+  position: relative
+  margin: 7px 30px 0 0
+  width: 34px
+
+.basket__val
+  width: 19px
+  height: 19px
+  border-radius: 50%
+  background: #212121
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  right: -8px
+  top: -8px
+  font-size: 11.5px
+  color: #fff
+  letter-spacing: 0.58px
+  font-weight: bold
+
+.box__schedule
+  letter-spacing: 0.8px
+  font-weight: 500
+  color: #222222
+  margin: 0 auto 0 57px
+
+.form-search__wrapper
+  width: 100%
+  max-width: 657px
+
+.form-search
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  border: solid 1px #d1d1d1
+    radius: 5px
+  button
+    width: 97px
+  input
+    border: none
+  label
+    width: calc(100% - 97px)
+
+.header__bottom
+  padding: 20px 0 0
+
+.menu-category
+  display: flex
+  align-items: center
+  justify-content: space-around
+  flex-wrap: wrap
+  width: 100%
+
+.menu-category__links
+  color: #222222
+  font-size: 19px
+  font-weight: 500
+  letter-spacing: 0.98px
+  padding: 0 10px
+  &:hover
+    color: $accent
+
+.menu-category__item
+  margin: 0 0 28px
+
+//main home
+.main-home
+  .container
+    justify-content: space-between
+    align-items: stretch
+
+.main-home__slider
+  width: 949px
+  color: #fff
+  overflow: hidden
+  border-radius: 5px
+  border: solid 1px #e7e7e7
+  position: relative
+
+
+.slick-slide
+  outline: none
+
+.slick-dotted.slick-slider
+  margin-bottom: 0
+
+.slick-dots
+  width: 100%
+  bottom: 21px
+  padding: 0 48px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  .slick-active
+    background: #fff
+  li
+    width: 11px
+    height: 11px
+    border: solid 2px #ffffff
+      radius: 50%
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+    button
+      display: none
+
+.slick-arrow
+  z-index: 1
+  opacity: 1
+  width: 18px
+  height: 21px
+  &:before
+    display: none
+
+.slick-next
+  right: 32px
+  background: url("../images/arrow-right.png") no-repeat center
+    size: contain
+  &:hover, &:focus
+    background: url("../images/arrow-right.png") no-repeat center
+      size: contain
+
+.slick-prev
+  left: 32px
+  background: url("../images/arrow-left.png") no-repeat center
+    size: contain
+  &:hover, &:focus
+    background: url("../images/arrow-left.png") no-repeat center
+      size: contain
+
+
+.main-home__slider_box
+  width: 100%
+  padding: 89px 0 20px 134px
+  height: 451px
+  position: relative
+  overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    right: -189px
+    bottom: -311px
+    background: url("../images/slider-decor.png") no-repeat center
+      size: contain
+    width: 668px
+    height: 513px
+    z-index: 1
+  &:after
+    content: ''
+    position: absolute
+    right: 57px
+    top: 50%
+    transform: translate(0,-50%)
+    width: 942px
+    height: 887px
+    background: url("../images/shadow-slider.png") no-repeat center
+      size: contain
+    z-index: 1
+
+
+.main-home__slider_box_content
+  position: relative
+  max-width: 500px
+  z-index: 2
+
+
+.main-home__slider_title
+  letter-spacing: 3.08px
+  font-size: 61.5px
+  font-weight: 900
+  text-transform: uppercase
+  text-shadow: 0 2px 6.9px rgba(0, 0, 0, 0.29)
+  width: 100%
+  margin: 0 0 30px
+
+.main-home__slider_text
+  font-size: 46px
+  font-weight: 300
+  letter-spacing: 2.3px
+
+.main-home__slider_img
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.home-category
+  width: calc(100% - 949px)
+  padding: 0 0 0 20px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.home-category__item
+  width: 100%
+
+.home-category__links
+  width: 100%
+  border-radius: 5px
+  border: solid 1px #e7e7e7
+  padding: 12px 10px 14px 36px
+  letter-spacing: 0.93px
+  font-size: 18.5px
+  font-weight: bold
+  background: #212121
+  color: #fff
+  &:hover
+    background: $accent
+    color: #fff
+
+//manufacturers
+.manufacturers
+  padding: 6px 0
+
+.manufacturers__box
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 20px
+
