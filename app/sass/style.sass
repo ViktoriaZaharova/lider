@@ -103,6 +103,7 @@ button
   font-size: 15.5px
   border-radius: 5px
   letter-spacing: 0.78px
+  padding: 10px 5px
 
 .btn_red
   color: #fff
@@ -110,8 +111,57 @@ button
   &:hover
     box-shadow: 0 0 10px rgba(#000,.3)
 
+.btn_black
+  background: #212121
+  color: #fff
+  border-radius: 5px
+  font-size: 20px
+  font-weight: bold
+  &:hover
+    background: $accent
+
+.button__group
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: center
+  flex-wrap: wrap
+
+.btn_border
+  border-radius: 5px
+  border: solid 2px #e8ebf4
+  color: #fff
+  font-size: 15.5px
+  font-weight: bold
+  &:hover
+    background: #fff
+    color: $accent
+
+.block_count_cart
+  opacity: .4
+  cursor: default !important
+  pointer-events: none
+
 .color_red
   color: $accent
+
+.bg-red
+  background: #d95717
+
+.bg-green
+  background: #73d68c
+
+.bg-gradient__red
+  background: linear-gradient(45deg, rgba(255,57,60,1) 0%,rgba(255,255,255,0) 100%)
+
+.bg-gradient__green
+  background: linear-gradient(45deg, rgba(115,214,140,1) 0%,rgba(115,214,140,0.5) 50%,rgba(255,255,255,0) 100%)
+
+.bg-gradient__yellow
+  background: linear-gradient(45deg, rgba(234,215,78,1) 0%,rgba(234,215,78,0) 100%)
+
+.bg-gradient__orange
+  background: linear-gradient(45deg, rgba(217,87,23,1) 0%,rgba(255,255,255,0) 100%)
 
 .container
   margin: 0 auto
@@ -157,15 +207,37 @@ input
 .align-items-center
   align-items: center
 
+.justify-between
+  justify-content: space-between
+
 .col-14
   width: 14.2%
 
 .col-50
   width: 50%
 
+.col-40
+  width: 40%
+
+.col-20
+  width: 20%
+
+.col-25
+  width: 25%
+
 .row
   width: calc(100% + 30px)
   margin: 0 -15px
+  display: flex
+  flex-wrap: wrap
+  align-items: flex-start
+
+h2
+  font-size: 33px
+  font-weight: 900
+  color: #222222
+  width: 100%
+  letter-spacing: 1.65px
 
 
 //menu
@@ -559,4 +631,326 @@ header
   align-items: center
   justify-content: center
   margin: 0 0 20px
+
+
+//.content-wrapper
+.content-wrapper
+  .col-20
+    padding: 0 10px
+
+.product-card
+  width: 286px
+  height: 466px
+  border: solid 1px #ededed
+  position: relative
+  padding: 30px 0 23px
+
+.product-card__image
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 172px
+  img
+    width: auto
+    height: 100%
+
+.product-card__body_top
+  padding: 14px 0 18px
+
+  text-align: center
+
+.btn_sorting
+  width: 98px
+  height: 30px
+  margin: 0 4px 0 0
+  border: solid 1px rgba(#231f20, .28)
+    radius: 5px
+  font-size: 10.5px
+  font-weight: bold
+  color: #505050
+  text-transform: uppercase
+  &:last-child
+    margin: 0
+  &:hover
+    background: #505050
+    color: #fff
+
+.product-card__body_bottom
+  border-top: 1px solid #ebebeb
+  padding: 15px 28px 0
+
+.product-card__title
+  color: #000000
+  font-size: 20.5px
+  font-weight: 500
+
+.product-card__article
+  margin: 12px auto 11px
+  color: rgba(5, 5, 5, 0.73)
+  font-size: 14px
+  font-weight: 100
+
+.item-sale, .item-availability
+  position: absolute
+  top: 0
+  color: #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  border-radius: 10px
+  height: 36px
+
+.item-sale
+  left: 19px
+  padding: 0 28px
+  text-transform: uppercase
+
+.item-availability
+  right: 19px
+  padding: 0 17px
+
+
+
+.btn__add_card
+  height: 53px
+
+.price
+  font-size: 23.5px
+  font-weight: 500
+  color: #050505
+  display: flex
+  align-items: flex-end
+
+.price__currency
+  font-size: 12px
+  font-weight: 100
+  margin: 0 0 2px 5px
+
+.amount
+  display: flex
+  align-items: center
+  span
+    width: 28px
+    height: 26px
+    border-radius: 5px
+    border: solid 1px rgba(#231f20, .17)
+    display: flex
+    align-items: center
+    justify-content: center
+    color: rgba(0, 0, 0, 0.36)
+    font-size: 16px
+    font-weight: bold
+    cursor: pointer
+    transition: .3s ease
+    &:hover
+      background: #231f20
+      color: #fff
+
+.amount__text
+  width: 45px
+  height: auto
+  border: none
+    radius: 0
+  text-align: center
+  padding: 0
+  color: #000000
+  font-size: 12px
+  font-weight: 500
+
+.line__quantity
+  margin: 0 0 16px
+
+.banner-products
+  width: 100%
+  height: 466px
+  position: relative
+  color: #fff
+  font-size: 20.5px
+  font-weight: 100
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  .btn
+    max-width: 228px
+    height: 52px
+
+.banner-products__news
+  padding: 110px 173px 50px 55px
+  background: linear-gradient(45deg, rgba(0,0,0,.6) 0%,rgba(0,0,0,0.5) 50%,rgba(255,255,255,0) 100%)
+
+.banner-products__title
+  font-size: 46px
+  font-weight: 900
+  text-transform: uppercase
+  span
+    border-bottom: 5px solid #ff393c
+
+.banner-products__bg
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  width: 100%
+  height: 100%
+  object-fit: cover
+  z-index: -1
+
+.banner-products__content
+  position: relative
+  z-index: 1
+
+.banner-products__description
+  margin: 40px 0 29px
+
+
+//.category-appointment
+.category-appointment
+  margin: 40px 0 46px
+  .col-25
+    padding: 0 6px
+
+.category-appointment__item
+  position: relative
+  overflow: hidden
+  padding: 75px 10px 68px
+  color: #fff
+  text-transform: uppercase
+  text-align: center
+  font-size: 28px
+  font-weight: 900
+  border: solid 1px #ededed
+    radius: 6px
+
+
+.category-appointment__item_bg
+  width: 100%
+  height: 100%
+  object-fit: cover
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  z-index: -1
+
+.banner-products__hits
+  padding: 110px 58px 50px 173px
+  background: linear-gradient(45deg, rgba(255,255,255,0) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,.6) 100%)
+  text-align: right
+  .banner-products__title
+    max-width: 230px
+    margin: 0 0 0 auto
+  .btn
+    margin: 0 0 0 auto
+
+
+//company-description
+.company-description
+  padding: 68px 0 64px
+  .box-text
+    margin: 59px 0 0
+  .container
+    padding: 0 70px
+
+.box-text
+  color: rgba(34, 34, 34, 0.98)
+  line-height: 1.21
+  font-size: 19.5px
+  font-weight: 300
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+//subscribe
+.subscribe
+  margin: 0 0 50px
+
+.subscribe-wrapper
+  border-radius: 5px
+  border: solid 1px #e7e7e7
+  align-items: center
+  display: flex
+  justify-content: space-between
+  width: 100%
+
+.subscribe__title
+  color: #ffffff
+  width: 399px
+  background: $accent
+  font-size: 31px
+  padding: 42px 40px 39px 50px
+
+.form-subscribe
+  width: calc(100% - 399px)
+  padding: 0 60px
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+  label
+    max-width: 349px
+    margin: 0
+  button
+    max-width: 260px
+    width: 100%
+
+label
+  display: block
+  width: 100%
+
+//footer
+.footer__top
+  border:
+    top: 1px solid #e6e6e6
+    bottom: 1px solid #e6e6e6
+  padding: 54px 0 67px
+  .container
+    align-items: flex-start
+    justify-content: space-between
+
+.footer-menu__links
+  font-weight: 100
+  color: #222
+  line-height: 1.63
+  &:hover
+    color: #000
+
+.footer__box
+  span
+    font-size: 16px
+    color: #222
+  .header__box
+    text-align: left
+    justify-content: flex-start
+    align-items: flex-start
+
+    &:last-child
+      margin: 20px 0 0
+      span
+        color: rgba(132, 132, 132, 0.38)
+  .phone
+    font-size: 18px
+    letter-spacing: 0.9px
+
+.footer__bottom
+  padding: 34px 0 30px
+  .container
+    align-items: center
+    justify-content: space-between
+
+.copyright
+  color: rgba(34, 34, 34, 0.57)
+  font-weight: 100
+  text-align: right
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+.payments
+  margin: 0 auto 0 33px
+
 
