@@ -54,9 +54,17 @@ $(function () {
 });
 
 function checkInput() {
-    if ($('.form-search input').val() == "") {
+    if ($('.form-search input').val() === "") {
         $('.search__result').fadeIn();
     } else {
         $('.search__result').fadeOut();
     }
 }
+
+$('[name=phone]').mask('+7 (999) 999 - 99 - 99');
+
+$('ul.tabs__caption').on('click', 'li:not(.active)', function () {
+    $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+});

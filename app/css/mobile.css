@@ -168,7 +168,9 @@
   .subscribe__title {
     width: 245px; }
   .form-subscribe {
-    width: calc(100% - 245px); } }
+    width: calc(100% - 245px); }
+  .popular-tk__logo {
+    height: 40px; } }
 
 @media only screen and (max-width: 1160px) {
   .content-wrapper .col-20 {
@@ -249,7 +251,10 @@
       .copyright p:last-child {
         margin: 0; }
   .footer__bottom {
-    padding: 20px 0; } }
+    padding: 20px 0; }
+  .popular-tk__logo {
+    width: 33.3%;
+    padding: 0 20px; } }
 
 @media only screen and (max-width: 860px) {
   .home-category__links {
@@ -370,7 +375,9 @@
     text-align: center;
     margin: 10px auto 0; }
   .payments {
-    margin: 0; } }
+    margin: 0; }
+  h1 {
+    font-size: 28px; } }
 
 @media only screen and (max-width: 590px) {
   .basket__box {
@@ -401,7 +408,41 @@
       .box-text p:last-child {
         margin: 0; }
   h2, .subscribe__title {
-    font-size: 22px; } }
+    font-size: 22px; }
+  h1 {
+    font-size: 24px;
+    margin: 0 0 30px; }
+  .breadcrumb-wrapper {
+    padding: 30px 0; }
+  .breadcrumb li a {
+    font-size: 12px; }
+  .form-registration {
+    padding: 30px; }
+    .form-registration button {
+      margin: 30px auto 0; }
+  .registration {
+    padding: 0 0 40px; }
+  .form-links {
+    font-size: 14px; }
+  .maps__delivery {
+    margin: 30px 0;
+    height: 350px; }
+  .delivery {
+    margin: 0 0 40px; }
+  .popular-tk__logo {
+    height: auto;
+    width: 50%;
+    padding: 0 10px;
+    margin: 0 0 20px; }
+    .popular-tk__logo img {
+      width: 100%;
+      height: auto; }
+  .popular-tk__subtitle {
+    margin: 0 0 20px; }
+  .delivery__content {
+    padding: 25px; }
+  .popular-tk {
+    padding: 20px 20px 10px; } }
 
 @media only screen and (max-width: 490px) {
   .header__box {
@@ -491,7 +532,12 @@
       margin: 0;
       font-size: 16px; }
   .search__result_line .search__result_image {
-    width: 30px; } }
+    width: 30px; }
+  .form-registration input {
+    font-size: 16px; }
+  .form-registration button {
+    height: 45px;
+    font-size: 15px; } }
 
 @media only screen and (max-width: 420px) {
   .logo__img {
@@ -549,7 +595,17 @@
   .search__result .price {
     font-size: 14px; }
     .search__result .price .price__currency {
-      font-size: 10px; } }
+      font-size: 10px; }
+  .banner-products__title {
+    font-size: 28px; }
+  .politics__content {
+    padding: 20px;
+    font-size: 14px; }
+  .form-notification {
+    padding: 12px 10px; }
+  .tabs__caption li {
+    margin-right: 0;
+    font-size: 16px; } }
 
 @media only screen and (max-width: 360px) {
   .logo__text {
