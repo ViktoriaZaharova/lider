@@ -1,57 +1,705 @@
 @import "fonts"
 @import "vars"
 
-/*==========  Desktop First  ==========*/
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 1600px)
+  .form-subscribe label
+    max-width: 320px
+
+  .subscribe__title
+    width: 300px
+    padding: 30px 20px
+    font-size: 26px
+
+  .form-subscribe
+    width: calc(100% - 300px)
+    padding: 0 20px
+
+@media only screen and (max-width : 1480px)
   .container
+    padding: 0 15px
+
+  .logo__img
+    max-width: 220px
+    margin: 0 auto 10px
+
+  .logo
+    font-size: 16px
+
+  .form-search__wrapper
+    max-width: 500px
+
+  .phone, .header__box span, .footer__box .phone
+    font-size: 16px
+
+  .header__center_wrapper
+    width: calc(100% - 230px)
+
+
+  .product-card
+    width: 100%
+
+  .row
+    margin: 0 -10px
+    width: calc(100% + 10px)
+
+  .content-wrapper
+    .col-40
+      width: 30%
+
+  .banner-products__news
+    padding: 80px 70px 50px 55px
+
+  .banner-products__title
+    font-size: 40px
+
+  .content-wrapper .col-20
+    width: 23.3%
+
+  .banner-products__hits
+    padding: 70px 58px 50px 80px
+
+
+@media only screen and (max-width : 1300px)
+  .basket__wrapper
+    margin: 0
+
+  .description-company
+    font-size: 14px
+    max-width: 325px
+
+  .header__center_top
     padding: 0
 
+  .main-menu__links, .location, .header__links
+    font-size: 16px
 
-/* Medium Devices, Desktops */
+  .main-home__slider
+    width: 700px
+
+  .home-category
+    width: calc(100% - 700px)
+
+  .main-home__slider_title
+    font-size: 50px
+
+  .main-home__slider_text
+    font-size: 30px
+
+  .main-home__slider_box
+    padding: 89px 0 20px 80px
+
+  .item-sale
+    padding: 0 15px
+
+  .item-availability
+    padding: 0 12px
+
+  .form-subscribe label
+    max-width: 280px
+
+  .form-subscribe button
+    max-width: 220px
+
+@media only screen and (max-width : 1199px)
+  .main-menu
+    margin: 0 auto 0 40px
+
+  .main-menu__item
+    margin: 0 20px 0 0
+
+  .logo
+    font-size: 14px
+
+  .logo__img
+    max-width: 200px
+
+  .description-company
+    font-size: 12px
+    max-width: 285px
+
+  .header__center
+    padding: 20px 0
+
+  .form-search__wrapper
+    max-width: 400px
+
+  .box__schedule
+    margin: 0 auto 0 20px
+    font-size: 14px
+    letter-spacing: 0
+
+  .basket__box
+    font-size: 16px
+
+  .phone, .header__box span, .footer__box .phone
+    font-size: 14px
+    letter-spacing: 0
+
+  input
+    height: 50px
+    font-size: 14px
+    padding: 0 10px 0 20px
+
+  .form-search button
+    width: 70px
+
+  .form-search label
+    width: calc(100% - 70px)
+
+  .header__center_wrapper
+    padding: 0 0 0 10px
+
+  .social__links
+    width: 30px
+    height: 30px
+
+  .basket__icon
+    margin: 7px 17px 0 0
+
+  .menu-category__links
+    font-size: 16px
+
+  .menu-category__item
+    margin: 0 0 10px
+
+  .company-description .container
+    padding: 0 15px
+
+  .box-text
+    font-size: 16px
+    line-height: normal
+
+  .company-description .box-text
+    margin: 30px 0 0
+
+  h2
+    font-size: 28px
+
+  .company-description
+    padding: 40px 0
+
+  .subscribe__title
+    width: 245px
+
+  .form-subscribe
+    width: calc(100% - 245px)
+
+@media only screen and (max-width : 1160px)
+  .content-wrapper .col-20
+    width: 33.3%
+
+  .content-wrapper .col-40
+    width: 100%
+    padding: 0 10px
+
+  .banner-products
+    height: auto
+    margin: 0 0 30px
+
+  .banner-products__hits
+    margin: 30px 0 0
+    align-items: flex-end
+
+  .banner-products__hits .banner-products__title
+    max-width: none
+
+  .subscribe__title
+    width: 100%
+    padding: 10px 20px
+    text-align: center
+
+  .form-subscribe
+    width: 100%
+    padding: 20px
+
+@media only screen and (max-width : 1060px)
+  .main-home__slider
+    width: 500px
+
+  .home-category
+    width: calc(100% - 500px)
+
+  .main-home__slider_title
+    font-size: 40px
+
+  .main-home__slider_text
+    font-size: 24px
+
+  .main-home__slider_box
+    padding: 60px 0 20px 50px
+
+  .category-appointment__item
+    font-size: 20px
+
+  .copyright
+    font-size: 14px
+
+  .footer__top
+    padding: 20px 0
+
+  .footer-menu__links
+    font-size: 14px
+
+  .footer__box .header__box:last-child
+    margin: 10px 0 0
+
+
 @media only screen and (max-width : 992px)
-	/**/
+  .main-menu__links, .location, .header__links
+    font-size: 14px
+
+  .header__links
+    padding: 5px 10px 5px 0
+    margin: 0 10px 0 0
+    &:last-child
+      padding: 5px 0 5px
+
+  .main-menu__item
+    margin: 0 10px 0 0
+
+  .main-menu
+    margin: 0 auto
+
+  .box__schedule, .description-company
+    display: none
+
+  .form-search__wrapper
+    max-width: 360px
+
+  .menu-category__links
+    font-size: 14px
+
+  .col-25
+    width: 50%
+
+  .category-appointment .col-25
+    padding: 0 10px
+
+  .category-appointment__item
+    margin: 0 0 20px
+
+  .category-appointment
+    margin: 40px 0 20px
+
+  .copyright
+    max-width: 400px
+    p
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+
+  .footer__bottom
+    padding: 20px 0
 
 
-/* Small Devices, Tablets */
+@media only screen and (max-width : 860px)
+  .home-category__links
+    font-size: 16px
+    padding: 10px 10px 10px 24px
+
+  .main-home__slider_box
+    height: 330px
+
+  .slick-prev
+    left: 20px
+
+  .slick-next
+    right: 20px
+
+  .main-home__slider_box:before
+    width: 600px
+    height: 480px
+
+  .product-card__body_bottom
+    padding: 10px 15px 0
+
+  .item-sale, .item-availability
+    font-size: 14px
+    height: 30px
+
+  .form-subscribe label
+    max-width: 240px
+
+  .form-subscribe button
+    max-width: 200px
+
+  .btn_black
+    font-size: 16px
+
+
+@media only screen and (max-width : 800px)
+  .logo
+    font-size: 10px
+
+  .logo__img
+    max-width: 140px
+
+  .header__center_wrapper
+    width: calc(100% - 160px)
+
+  .main-menu__links, .location, .header__links
+    font-size: 12px
+
+  .main-home__slider
+    width: 400px
+
+  .home-category
+    width: calc(100% - 400px)
+
+  .main-home__slider_text
+    font-size: 20px
+
+  .main-home__slider_title
+    font-size: 30px
+
+  .slick-dots
+    padding: 0 20px
+
+  .footer-menu
+    width: 25%
+
+  .footer__box
+    margin: 10px 0 0
+
 @media only screen and (max-width : 768px)
-	/**/
+  .btn
+    font-size: 14px
+
+  .item-sale, .item-availability
+    font-size: 10px
+    border-radius: 3px
+    height: 20px
+    padding: 0 7px
+
+  .product-card__image
+    height: 150px
+
+  .btn_sorting
+    font-size: 8px
+    width: 77px
+    height: 26px
+
+  .product-card
+    padding: 20px 0
+    height: 415px
+
+  .amount__text
+    width: 40px
+
+  .price
+    font-size: 20px
+
+  .product-card__article
+    font-size: 12px
+
+  .product-card__title
+    font-size: 18px
+
+  .form-subscribe label
+    max-width: none
+    margin: 0 auto 10px
+
+  .form-subscribe button
+    margin: 0 auto
+    height: 50px
+
+  .copyright
+    max-width: 350px
 
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width : 710px)
+  .header__top, .header__center_bottom
+    display: none
+
+  .header__center_top
+    margin: 0
+
+  .header__center_mobile
+    display: flex
+
+  .menu-category__links
+    font-size: 12px
+
+  .main-home__slider
+    width: 100%
+
+  .home-category
+    width: 100%
+    padding: 0
+    margin: 20px 0 0
+
+  .home-category__item
+    margin: 0 0 5px
+    &:last-child
+      margin: 0
+
+  .col-14
+    width: 20%
+    padding: 0 10px
+
+  .content-wrapper .col-20
+    width: 50%
+
+  .product-card
+    margin: 0 0 20px
+
+  .footer-menu__links
+    font-size: 12px
+    line-height: 1.3
+
+  .copyright
+    max-width: none
+    text-align: center
+    margin: 10px auto 0
+
+  .payments
+    margin: 0
+
+@media only screen and (max-width : 590px)
+  .basket__box
+    display: none
+
+  .basket__icon
+    margin: 0
 
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width : 575px)
+  .banner-products__news, .banner-products__hits
+    padding: 30px 20px
+
+  .banner-products
+    font-size: 16px
+
+  .banner-products__title
+    font-size: 34px
+    span
+      border-width: 2px
+
+  .banner-products .btn
+    height: 45px
+    font-size: 14px
+
+  .col-14
+    width: 25%
+
+  .banner-products__description
+    margin: 30px 0 20px
+
+  .box-text
+    font-size: 14px
+    p
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+
+  h2, .subscribe__title
+    font-size: 22px
 
 
-/*==========  Mobile First  ==========*/
+@media only screen and (max-width : 490px)
+  .header__box
+    display: none
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
+  .header__box_phone
+    display: flex
+    margin: 0 auto
+
+  input
+    height: 40px
+
+  .form-search button
+    width: 50px
+    img
+      width: 20px
+
+  .form-search label
+    width: calc(100% - 50px)
+
+  .header__bottom
+    display: none
+    position: fixed
+    max-width: 300px
+    width: 100%
+    background: #fff
+    z-index: 7
+    top: 0
+    left: 0
+    height: 100%
+    overflow-y: auto
+    padding: 0
+    .container
+      padding: 30px 20px
+      height: 100%
+
+    .btn-close__menu
+      display: flex
+
+  .header__center
+    border: none
+
+  .btn__mobile_catalog
+    display: flex
+
+  .menu-category
+    flex-direction: column
+    align-items: flex-start
+    margin: 20px 0
+
+  .line__quantity
+    flex-direction: column
+    align-items: center
+
+  .price
+    margin: 10px auto 0
+
+  .product-card__image
+    height: 120px
+
+  .btn__add_card
+    height: auto
+    font-size: 13px
+
+  .btn_sorting
+    padding: 2px
+    width: 70px
+
+  .manufacturers__box
+    margin: 0 0 10px
+
+  .category-appointment__item
+    font-size: 16px
+    padding: 40px 10px
+
+  .form-subscribe button
+    height: 40px
+
+  .footer-menu
+    width: 50%
+    margin: 0 0 10px
+
+  .footer__box
+    .header__box
+      display: flex
+
+  .search__result
+    padding: 10px
+    .price
+      margin: 0
+      font-size: 16px
+
+  .search__result_line .search__result_image
+    width: 30px
+
+@media only screen and (max-width: 420px)
+  .logo__img
+    max-width: 100px
+
+  .logo
+    letter-spacing: 0
+
+  .header__center_wrapper
+    width: calc(100% - 130px)
+
+  .basket__icon
+    width: 30px
+
+  .basket__val
+    width: 15px
+    height: 15px
+    font-size: 8px
+
+  .btn-dropDown__phone
+    width: 12px
+
+  .col-14
+    width: 33.3%
+
+  .btn_sorting
+    letter-spacing: 0
+    font-size: 7px
+    width: 65px
+    height: 22px
+
+  .btn__add_card
+    font-size: 12px
+
+  .product-card__title
+    font-size: 16px
 
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
+  .content-wrapper .col-20
+    width: 100%
 
+  .product-card
+    height: auto
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
+  .product-card__image
+    height: 80px
 
+  .menu__fixed
+    display: flex
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
+  .footer__bottom
+    padding: 20px 0 80px
 
+  .main-home__slider_box
+    padding: 40px 0 20px 30px
+    height: 270px
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+  .main-home__slider_text
+    letter-spacing: 0
 
+  .main-home__slider_box:after
+    right: 0
+
+  .slick-prev
+    left: 10px
+
+  .slick-next
+    right: 10px
+
+  .search__result_line
+    .product-card__article
+      font-size: 10px
+    .btn
+      font-size: 11px
+
+  .search__result .price
+    font-size: 14px
+    .price__currency
+      font-size: 10px
+
+@media only screen and (max-width: 360px)
+  .logo__text
+    display: none
+
+  .logo__img
+    margin: 0
+
+  .phone, .header__box span
+    font-size: 12px
+
+  .header__box_dropdown
+    .phone, span
+      font-size: 11px
+
+  .header__center_wrapper
+    width: calc(100% - 110px)
+
+  input
+    font-size: 12px
+    padding: 0 10px
+
+  .header__center
+    padding: 10px 0
+
+  .menu__fixed
+    font-size: 10px
+
+  .menu__fixed_icon
+    width: 20px
+    height: 20px
+
+  .form-search__mobile
+    bottom: 57px

@@ -20,3 +20,43 @@ $('.up').click(function () {
     $input.change();
     return false;
 });
+
+$('.btn-dropDown__phone').click(function (e) {
+    e.preventDefault();
+    $('.header__box_dropdown').slideToggle();
+});
+
+$('.btn-burger').click(function () {
+   $('.overlay').fadeIn();
+   $('.mobile-menu').fadeIn();
+});
+
+$('.btn-close__menu, .overlay').click(function () {
+    $('.mobile-menu, .header__bottom').fadeOut();
+    $('.overlay').fadeOut();
+});
+
+$('.btn__mobile_catalog').click(function (e) {
+    e.preventDefault();
+    $('.overlay').fadeIn();
+    $('.header__bottom').fadeIn();
+});
+
+$('.menu__fixed_search').click(function (e) {
+    e.preventDefault();
+    $('.form-search__mobile').fadeToggle();
+});
+
+
+// input search
+$(function () {
+    $('.form-search input').keydown(checkInput).keyup(checkInput);
+});
+
+function checkInput() {
+    if ($('.form-search input').val() == "") {
+        $('.search__result').fadeIn();
+    } else {
+        $('.search__result').fadeOut();
+    }
+}
