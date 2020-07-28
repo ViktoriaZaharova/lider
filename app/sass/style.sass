@@ -106,6 +106,7 @@ button
   border-radius: 5px
   letter-spacing: 0.78px
   padding: 10px 5px
+  width: 100%
 
 .btn_red
   color: #fff
@@ -146,6 +147,9 @@ button
 
 .color_red
   color: $accent
+
+.color_blue
+  color: #3451bc
 
 .bg-red
   background: #d95717
@@ -196,6 +200,9 @@ input
 .text-uppercase
   text-transform: uppercase
 
+.font-bold
+  font-weight: bold
+
 .w-100
   width: 100%
 
@@ -229,6 +236,18 @@ input
 
 .col-25
   width: 25%
+
+.col-80
+  width: 80%
+
+.col-70
+  width: 70%
+
+.col-30
+  width: 30%
+
+.p-15
+  padding: 0 15px
 
 .row
   width: calc(100% + 30px)
@@ -942,6 +961,7 @@ header
 .subscribe
   margin: 0 0 50px
 
+
 .subscribe-wrapper
   border-radius: 5px
   border: solid 1px #e7e7e7
@@ -950,6 +970,7 @@ header
   flex-wrap: wrap
   justify-content: space-between
   width: 100%
+  overflow: hidden
 
 .subscribe__title
   color: #ffffff
@@ -1421,3 +1442,502 @@ label
   .active
     background: #eeeeee
 
+//contacts
+.contacts
+  padding: 0 0 50px
+
+.maps
+  width: 100%
+  height: 441px
+  margin: 0 0 37px
+  iframe
+    width: 100%
+    height: 100%
+
+.contacts__wrapper_item
+  border: solid 1px #ededed
+  margin: 0 0 49px
+
+.contacts__wrapper
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+
+.contacts__company
+  width: calc(100% - 480px)
+
+.contacts-feedback
+  width: 459px
+
+.company__name
+  width: 100%
+  font-size: 36.5px
+  font-weight: 500
+  margin: 0 0 44px
+
+.contacts__company
+  padding: 48px 47px 80px
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.contacts__company_box_info
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 0 28px
+  &:last-child
+    margin: 0
+
+.contacts__company_box
+  width: 50%
+  color: #000000
+  p
+    font-size: 16.5px
+    font-weight: 500
+  .links-accent
+    margin: 24px 0 0 0
+
+.contacts__company_box_title
+  color: rgba(0, 0, 0, 0.7)
+  margin: 0 0 10px
+  font-size: 17px
+  display: inline-block
+  width: 100%
+  font-weight: 100
+
+.contacts__company_box_info_address
+  p
+    font-size: 18px
+    font-weight: normal
+
+.contacts__company_box_icon
+  width: 18px
+  min-width: 18px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0 34px 0 0
+
+.links-accent
+  text-decoration: underline
+  color: $accent
+
+.acceptance_of_applications
+  margin: 27px 0 0
+  color: rgba(0, 0, 0, 0.48)
+  font-size: 14px
+  font-weight: 300
+  line-height: 1
+
+.contacts-list
+  width: 100%
+
+.contacts-list__item
+  display: flex
+  align-items: center
+  margin: 0 0 20px
+  &:last-child
+    margin: 0
+
+.contacts-list__phone
+  display: flex
+  align-items: center
+  font-size: 18px
+  font-weight: 500
+  color: #000
+  min-width: 193px
+
+.phone-icon
+  width: 20px
+  min-height: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 19px 0 0
+
+.contacts__company_box_info_contact
+  .contacts__company_box_title
+    margin: 0 0 25px
+
+.contacts-list__item_span
+  color: rgba(0, 0, 0, 0.7)
+  font-size: 17px
+  font-weight: 100
+  margin: 0 0 0 20px
+
+.contacts-feedback__title
+  color: rgba(0, 0, 0, 0.7)
+  font-size: 17px
+  font-weight: 100
+  padding: 35px 35px 43px
+  width: 100%
+
+.feedback-list
+  width: 100%
+  color: #000
+
+.feedback-list__item
+  display: flex
+  align-items: flex-start
+  width: 100%
+  padding: 16px 8px 26px 40px
+  border-bottom: 1px solid #e0e0e0
+  &:last-child
+    border: none
+
+.feedback-list__links
+  display: flex
+  align-items: center
+  font-size: 18px
+  font-weight: 100
+  color: #000
+  white-space: nowrap
+
+.feedback-list__item_icon
+  margin: 0 18px 0 0
+  width: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  min-width: 20px
+
+
+.feedback-list__item_text
+  margin: 0 0 0 14px
+  font-size: 17px
+  font-weight: 100
+  span
+    font-size: 13.5px
+    display: block
+    padding: 0 0 0 18px
+
+//company-social
+.company-social
+  width: 100%
+  border: solid 1px #e7e7e7
+    radius: 5px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 0 70px 0 0
+  overflow: hidden
+
+.company-social__title
+  background: #ff393c
+  color: #fff
+  padding: 20px 50px
+  text-transform: uppercase
+  font-size: 24.5px
+  font-weight: 900
+
+.list-social
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.list-social__item
+  margin: 0 10px 0 0
+  &:last-child
+    margin: 0
+
+.list-social__links
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 36px
+  height: 36px
+  &:hover
+    opacity: .7
+
+//.representative
+.representative
+  padding: 0 0 100px
+
+.form-representative
+  width: 100%
+  margin: 52px 0 0
+  button
+    margin: 50px 0 0
+    max-width: 220px
+    font-size: 17px
+    height: 49px
+  .list-checkbox
+    margin: 0 0 13px
+    &:last-child
+      margin: 0
+  .form-group
+    &:first-child
+      max-width: 990px
+      width: 100%
+      justify-content: space-between
+
+.form-group__label
+  max-width: 478px
+  width: 100%
+  margin: 0 0 20px
+  input
+    height: 40px
+    padding: 0 11px
+    color: #212121
+    font-size: 14px
+    border-radius: 0
+    font-weight: 300
+    &::placeholder
+      color: #212121
+
+.form-group__subtitle
+  display: block
+  color: #050505
+  font-size: 14px
+  font-weight: 500
+  margin: 0 0 8px
+
+
+.list-checkbox
+  font-size: 14px
+  font-weight: 300
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.list-checkbox__item
+  width: 22%
+  margin: 0 0 15px
+
+.form-group
+  margin: 0 0 30px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+  &:last-child
+    margin: 0
+
+
+.form-group__title
+  color: #050505
+  font-size: 14px
+  font-weight: 500
+  margin: 0 0 30px
+
+.checkbox
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-start
+  .checkbox-inp
+    display: none
+  .checkbox-custom
+    position: relative
+    width: 20px
+    min-width: 20px
+    height: 20px
+    display: inline-block
+    vertical-align: middle
+    border: solid 1px #d2d2d2
+      radius: 4px
+    background: #ffffff
+    cursor: pointer
+    transition: .3s ease
+    margin: 0 11px 0 0
+  .label
+    display: inline-block
+    vertical-align: middle
+    cursor: pointer
+
+  .checkbox-inp:checked + .checkbox-custom
+    background: $accent
+    border-color: $accent
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 13px
+      height: 10px
+      background: url("../images/check.png") no-repeat center
+        size: contain
+
+//about
+.opportunities
+  padding: 70px 0 124px
+
+.opportunities__wrapper
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  flex-wrap: wrap
+  margin: 58px 0 70px
+  border: solid 2px #d2d2d2
+  padding: 58px 50px 18px
+
+.opportunities__box
+  width: 25%
+  display: flex
+  align-items: center
+  font-size: 14px
+  font-weight: bold
+  margin: 0 0 40px
+
+.opportunities__icon
+  position: relative
+  width: 105px
+  height: 70px
+  display: flex
+  align-items: center
+  justify-content: center
+  min-width: 105px
+  margin: 0 24px 0 0
+  padding: 0 0 0 35px
+  &:before
+    content: ''
+    position: absolute
+    width: 41px
+    height: 41px
+    background-color: #ff393c
+    transform: rotate(45deg) translate(0,-50%)
+    left: 0
+    top: 50%
+  img
+    position: relative
+    z-index: 1
+
+.opportunities__text
+  max-width: 130px
+
+.requisites
+  font-size: 14px
+  font-weight: 100
+
+//subcategory
+.subcategory
+  padding: 20px 0 129px
+  border-bottom: 1px solid #e2e2e2
+  .col-80
+    padding: 0 15px
+  .col-25
+    padding: 0 10px
+  .breadcrumb
+    margin: 0 0 21px
+
+.subcategory__item
+  position: relative
+  overflow: hidden
+  height: 123px
+  width: 100%
+  border: solid 1px #ededed
+    radius: 6px
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  justify-content: center
+  color: #212121
+  font-size: 18.5px
+  font-weight: 500
+  margin: 0 0 17px
+  &:hover
+    background: $accent
+    border-color: $accent
+    color: #fff
+    .subcategory__item_icon
+      filter: brightness(0) invert(1)
+
+.subcategory__item.color_white
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.27)
+  .subcategory__item_icon
+    filter: brightness(0) invert(1)
+
+.subcategory__item_icon
+  margin: 0 auto 20px
+  width: 22px
+
+.color_white
+  color: #ffffff
+
+.banner-products__subcategory
+  padding: 150px 25px 128px
+  height: 440px
+  .banner-products__title
+    font-size: 36px
+    span
+      border-bottom-width: 4px
+  .banner-products__description
+    font-size: 16px
+    margin: 32px 0 0
+
+//news
+.news
+  padding: 0 0 100px
+
+.news__wrapper_right
+  width: 476px
+
+.news__wrapper_left
+  padding: 0 30px 0 0
+  width: calc(100% - 476px)
+
+.news__item
+  width: 100%
+  border: solid 1px #d2d2d2
+
+.news__item_text
+  margin: 15px 0 20px
+  font-weight: 100
+  p
+    margin: 0 0 15px
+    &:last-child
+      margin: 0
+
+.news__item_block
+  padding: 30px 30px 24px
+  .news__item_img
+    height: 165px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+.news__item_body
+  padding: 30px 0 0
+
+.news__item_img
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+
+.news__item_line
+  padding: 30px 30px 32px
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 0 28px
+  &:last-child
+    margin: 0
+  .news__item_img
+    max-width: 448px
+  .news__item_body
+    width: calc(100% - 448px)
+    padding: 0 0 0 29px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: space-between
+
+
+.news__item_title
+  color: #050505
+  font-weight: 500
+  text-transform: uppercase
