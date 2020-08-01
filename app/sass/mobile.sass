@@ -41,7 +41,10 @@
 
   .row
     margin: 0 -10px
-    width: calc(100% + 10px)
+    width: calc(100% + 20px)
+
+  .col-25, .col-20
+    padding: 0 10px
 
   .content-wrapper
     .col-40
@@ -63,6 +66,14 @@
     padding: 120px 20px 40px
 
 
+@media only screen and (max-width : 1450px)
+  .sidebar
+    width: 290px
+
+  .category-section__wrapper
+    width: calc(100% - 290px)
+
+
 @media only screen and (max-width : 1400px)
   .acceptance_of_applications
     font-size: 12px
@@ -79,6 +90,34 @@
 
   .contacts__company_box_icon
     margin: 0 10px 0 0
+
+@media only screen and (max-width : 1370px)
+  .category-section__wrapper
+    .col-25
+      width: 33.3%
+
+  .product-card
+    max-width: none
+
+  .sorting__box_links
+    margin: 0 0 0 20px
+
+  .product-section__image
+    width: 500px
+
+  .slider-nav
+    padding: 20px
+
+  .product-preview
+    width: 120px
+
+  .product-section__image_slider_max
+    padding: 25px 20px 0
+
+
+
+  .product-section__information
+    width: calc(100% - 500px)
 
 @media only screen and (max-width : 1300px)
   .basket__wrapper
@@ -108,12 +147,6 @@
 
   .main-home__slider_box
     padding: 89px 0 20px 80px
-
-  .item-sale
-    padding: 0 15px
-
-  .item-availability
-    padding: 0 12px
 
   .form-subscribe label
     max-width: 280px
@@ -171,6 +204,10 @@
 
   .news__wrapper_left
     width: calc(100% - 400px)
+
+  .col-20
+    width: 25%
+
 
 
 @media only screen and (max-width : 1199px)
@@ -238,7 +275,7 @@
   .company-description .container
     padding: 0 15px
 
-  .box-text
+  .box-text, .list-dots
     font-size: 16px
     line-height: normal
 
@@ -271,6 +308,21 @@
 
   .banner-products__subcategory .banner-products__title
     font-size: 30px
+
+  .category-content .box-text
+    margin: 30px 0 0
+
+  .subtitle
+    font-size: 18px
+    margin: 40px 0 20px
+
+  .list-dots li
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+
+  .category-content
+    padding: 0 0 50px
 
 @media only screen and (max-width : 1160px)
   .content-wrapper .col-20
@@ -306,6 +358,48 @@
   .news__item_line .news__item_body
     width: calc(100% - 280px)
 
+  .basket__table_name
+    width: 30%
+
+  .table__td
+    padding: 10px
+
+  .basket__table_quantity
+    width: 20%
+
+  .basket__table_sum
+    width: 14%
+
+  .form__ordering_wrap
+    width: 49%
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+
+  .sorting-wrapper
+    flex-direction: column
+    align-items: flex-start
+
+  .sorting__box
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+
+  .product-card__body_bottom
+    padding: 15px 15px 0
+
+  .product-section__image
+    width: 400px
+
+  .slider-nav
+    padding: 20px
+
+  .product-preview
+    width: 90px
+    height: 90px
+
+  .product-section__information
+    width: calc(100% - 400px)
 
 @media only screen and (max-width : 1060px)
   .main-home__slider
@@ -354,6 +448,18 @@
   .news__wrapper_left
     width: calc(100% - 300px)
 
+  .category-section__wrapper .col-25
+    width: 50%
+
+  .sorting__box_links
+    margin: 0 0 0 15px
+
+  .product-section__information
+    width: 100%
+    padding: 0
+
+  .product-section__image
+    width: 100%
 
 @media only screen and (max-width : 992px)
   .main-menu__links, .location, .header__links
@@ -382,6 +488,9 @@
 
   .col-25
     width: 50%
+
+  .col-20
+    width: 33.3%
 
   .category-appointment .col-25
     padding: 0 10px
@@ -419,6 +528,72 @@
 
   .subcategory__item
     font-size: 16px
+
+  .basket__table_wrapper
+    width: 100%
+    margin: 0 0 30px
+
+  .shopping-basket__total
+    margin: 0 auto
+
+  .shopping-basket
+    padding: 60px 0
+    h1
+      margin: 0 0 30px
+
+  .sidebar, .sorting-wrapper
+    display: none
+    position: fixed
+    z-index: 8
+    left: 0
+    top: 0
+    background: #fff
+    padding: 20px 20px
+    overflow-y: auto
+    width: 300px
+    height: 100%
+    .btn-close__menu
+      display: flex
+      margin: 0 0 20px auto
+
+  .category-section__wrapper
+    width: 100%
+    padding: 0
+
+  .category-section__wrapper .col-25
+    width: 33.3%
+
+  .filter__box_body
+    padding: 0 20px 20px
+
+  .filter__box_header
+    padding: 20px
+
+  .price-range__label input
+    width: 70px
+
+  .sorting-wrapper
+    background: #222
+    .btn-close__menu
+      &:before, &:after
+        background: #fff
+
+  .sorting__box
+    flex-direction: column
+    align-items: flex-start
+    margin: 0 0 20px
+
+  .sorting__box_title
+    margin: 0 0 10px
+
+  .sorting__box_links
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+
+  .button-group__mobile
+    display: flex
+
 
 @media only screen and (max-width : 940px)
   .news__wrapper_right
@@ -473,6 +648,10 @@
 
   .opportunities__box
     width: 50%
+
+  .item-sale, .item-availability
+    max-width: none
+    width: auto
 
 
 @media only screen and (max-width : 800px)
@@ -594,6 +773,9 @@
   .subcategory
     padding: 20px 0 30px
 
+  .category-section__wrapper .col-25
+    width: 50%
+
 @media only screen and (max-width : 710px)
   .header__top, .header__center_bottom
     display: none
@@ -642,8 +824,23 @@
   .payments
     margin: 0
 
-  h1
+  h1, .modal__title
     font-size: 28px
+
+  .category-section__wrapper .col-25
+    margin: 0
+
+  .col-20
+    width: 50%
+
+  .product-section__information_item
+    width: 100%
+    padding: 0
+    margin: 0 0 20px
+
+  .product-section__information_quantity
+    width: 100%
+
 
 @media only screen and (max-width : 640px)
   .form-group__label
@@ -651,6 +848,24 @@
 
   .subcategory .col-25
     width: 33.3%
+
+  .form__ordering_wrap
+    width: 100%
+
+  .ordering__box_body
+    padding: 20px
+
+  .ordering-section
+    padding: 50px 0
+
+  .consent
+    padding: 0
+    margin: 20px auto 10px
+
+  .form__ordering button
+    margin: 0 auto
+    font-size: 15px
+    height: 40px
 
 @media only screen and (max-width : 590px)
   .basket__box
@@ -675,6 +890,38 @@
   .news__item_line .news__item_body
     width: 100%
     padding: 20px 0 0
+
+  .shopping-basket__total .button__group .btn
+    font-size: 15px
+
+  .basket__table
+    .table__head
+      display: none
+
+  .table-body_line
+    &:first-child
+      border-top: none
+
+  .basket__table_photo
+    width: 30%
+    border-bottom: solid 1px #f3f3f3
+
+  .basket__table_name
+    width: 70%
+    border: none
+      bottom: solid 1px #f3f3f3
+
+  .basket__table_price
+    width: 30%
+
+  .basket__table_quantity
+    width: 30%
+
+  .basket__table_sum
+    width: 30%
+
+  .basket__table_delete
+    width: 10%
 
 
 @media only screen and (max-width : 575px)
@@ -709,9 +956,15 @@
   h2, .subscribe__title
     font-size: 22px
 
-  h1
+  h1, .modal__title
     font-size: 24px
     margin: 0 0 30px
+
+  .modal__title
+    margin: 0 0 20px
+
+  .modal__description
+    font-size: 14px
 
   .breadcrumb-wrapper
     padding: 30px 0
@@ -781,6 +1034,40 @@
   .form-group
     margin: 0 0 20px
 
+  .successful-order
+    padding: 60px 0
+
+  .successful-order__icon
+    width: 80px
+    height: 80px
+    margin: 0 auto 20px
+
+  .successful-order__text
+    font-size: 16px
+
+  .tabs-product .tabs__content
+    padding: 20px
+
+  .related-products__wrap
+    flex-wrap: wrap
+    .amount
+      width: 40%
+
+  .related-products__sum
+    padding: 0 20px
+    width: 40%
+
+  .btn_add
+    margin: 0 0 0 auto
+
+  .related-products__name
+    padding: 0 0 0 20px
+    width: calc(100% - 30px)
+
+  .list__payment_item
+    height: 18px
+
+
 @media only screen and (max-width : 530px)
   .opportunities__box
     width: 100%
@@ -826,7 +1113,7 @@
     max-width: 300px
     width: 100%
     background: #fff
-    z-index: 7
+    z-index: 8
     top: 0
     left: 0
     height: 100%
@@ -905,6 +1192,21 @@
   .news__item_block, .news__item_line
     padding: 20px
 
+  .modal__wrapper
+    padding: 20px
+
+  .form__modal button
+    font-size: 15px
+
+@media only screen and (max-width: 440px)
+  .related-products__line
+    flex-direction: column
+    align-items: flex-start
+
+  .related-products__title
+    margin: 0 0 10px
+    width: 100%
+
 @media only screen and (max-width: 420px)
   .logo__img
     max-width: 100px
@@ -942,7 +1244,7 @@
     font-size: 16px
 
 
-  .content-wrapper .col-20
+  .content-wrapper .col-20, .category-section__wrapper .col-25
     width: 100%
 
   .product-card
@@ -1029,6 +1331,53 @@
   .banner-products__subcategory .banner-products__title
     font-size: 24px
 
+  .shopping-basket__total
+    width: 100%
+
+  .form-promo__code label, .form-promo__code button
+    width: 100%
+
+  .form-promo__code button
+    margin: 15px 0 0
+
+  .shopping-basket__total .button__group .btn
+    max-width: 100%
+    margin: 0 0 10px
+    height: 40px
+    &:last-child
+      margin: 0
+
+  .shopping-basket__total_list
+    margin: 0 0 30px
+
+  .shopping-basket__total_item
+    margin: 0 0 15px
+
+  .category-section
+    padding: 25px 0 40px
+
+  .col-20
+    width: 100%
+
+  .similar-products
+    padding: 0 0 20px
+    h2
+      margin: 0 0 30px
+
+  .product-preview
+    width: 60px
+    height: 60px
+    padding: 5px
+
+  .product-gallery
+    height: 250px
+
+  .tabs-product .tabs__caption li
+    font-size: 12px
+    height: 40px
+
+
+
 @media only screen and (max-width: 360px)
   .logo__text
     display: none
@@ -1065,4 +1414,7 @@
 
   .list-checkbox__item
     width: 100%
+
+  .basket__table
+    font-size: 12px
 
