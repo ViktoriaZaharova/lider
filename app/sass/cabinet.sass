@@ -532,3 +532,60 @@
 .total-sum__val
   font-weight: 300
   margin: 0 0 0 5px
+
+//sales
+.sales-wrapper
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.sale__box
+  position: relative
+  background: #ff393c
+  color: #000000
+  min-height: 200px
+  border-radius: 10px
+  padding: 34px 25px
+  margin: 0 0 20px
+  display: flex
+  flex-direction: column
+  align-items: center
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    width: calc(100% - 24px)
+    height: calc(100% - 24px)
+    transform: translate(-50%,-50%)
+    border: dashed 2px #ffffff
+      radius: 10px
+
+.promo-code
+  display: flex
+  align-items: center
+  font-size: 27.5px
+  font-weight: bold
+
+.promo-code__val
+  color: #fff
+  margin: 0 0 0 5px
+
+.sale__box_val
+  margin: 10px 0
+  font-size: 45px
+  font-weight: 900
+  color: #fff
+
+.sale__box_condition
+  display: flex
+  align-items: center
+  font-size: 19.5px
+  font-weight: bold
+
+.sale__box_condition_sum
+  display: inline-block
+  margin: 0 3px
+  color: #fff
+
