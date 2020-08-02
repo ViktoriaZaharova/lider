@@ -99,6 +99,24 @@ $('.sorting-wrapper .btn-close__menu').click(function (e) {
     $('.overlay').fadeOut();
 });
 
+$('.btn-menu__cabinet').click(function () {
+    $('.overlay').fadeIn();
+    $('.cabinet-sidebar').fadeIn();
+});
+
+$('.cabinet-sidebar .btn-close__menu').click(function () {
+    $('.cabinet-sidebar').fadeOut();
+    $('.overlay').fadeOut();
+});
+
+$('.cabinet-sidebar li a').each(function () {
+    var location = window.location.href;
+    var link = this.href;
+    if (location == link) {
+        $(this).addClass('active');
+    }
+});
+
 $(".datepicker").datepicker($.datepicker.regional["ru"]);
 
 $("#buy_price").slider({

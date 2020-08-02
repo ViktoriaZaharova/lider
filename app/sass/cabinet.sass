@@ -1,0 +1,534 @@
+@import "fonts"
+@import "vars"
+
+//header-cabinet
+.header-cabinet
+  padding: 33px 0
+  border: none
+
+.header__box_cabinet
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+  margin: 0 70px 0 0
+  color: #000
+  text-align: left
+  &:last-child
+    margin: 0
+  span
+    margin: 0
+    width: 100%
+    color: #000
+    font-size: 16px
+    font-weight: 300
+  .phone
+    font-size: 18px
+    color: #000
+    letter-spacing: 0
+
+
+.header__box_cabinet_icon
+  width: 25px
+  min-width: 25px
+  height: 25px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 15px 0 0
+  svg
+    width: 100%
+    height: 100%
+    fill: #ff393c
+
+
+.header__center_wrapper_cabinet
+  width: auto
+  padding: 0
+  display: flex
+  align-items: flex-start
+  margin: 0 auto 0 77px
+
+.basket__wrapper_cabinet
+  width: 152px
+  height: 49px
+  border-radius: 5px
+  border: solid 1px #000000
+  margin: 0
+  align-items: center
+  justify-content: center
+  font-size: 17px
+  font-weight: bold
+  color: #000
+  .basket__icon
+    margin: 0 19px 0 0
+    width: 25px
+  .basket__val
+    background: #ff393c
+    width: 20px
+    height: 20px
+    min-width: 20px
+    font-size: 12px
+    letter-spacing: 0
+
+.footer-cabinet
+  padding: 36px 0 46px
+  border-top: 1px solid #e7e7e7
+  .container
+    padding: 0 50px 0 360px
+    align-items: center
+    justify-content: space-between
+  .copyright
+    font-size: 14px
+    text-align: left
+    p
+      margin: 0 0 2px
+
+.main-cabinet-user
+  padding: 34px 0 170px
+  font-size: 14px
+  h1
+    letter-spacing: 1.65px
+
+
+//cabinet-sidebar
+.cabinet-sidebar
+  width: 339px
+  .btn-close__menu
+    display: none
+
+.cabinet-menu
+  width: 100%
+
+.cabinet-menu__item
+  width: 100%
+  margin: 0 0 6px
+  &:last-child
+    margin: 0
+
+.cabinet-menu__links
+  width: 100%
+  height: 52px
+  color: #fff
+  border-radius: 5px
+  background: #212121
+  letter-spacing: 0.9px
+  font-size: 18px
+  font-weight: bold
+  padding: 0 20px 0 40px
+  display: flex
+  align-items: center
+  &:hover
+    background: $accent
+
+.cabinet-menu__links.active
+  background: $accent
+
+.main-cabinet-user__content
+  width: calc(100% - 339px)
+  padding: 0 0 0 23px
+
+.links-edit
+  display: flex
+  align-items: center
+  font-size: 14px
+  font-weight: 500
+  color: #000
+  &:hover
+    color: $accent
+
+.links-edit__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 25px
+  min-width: 25px
+  height: 25px
+  margin: 0 0 0 26px
+
+.main-cabinet-user__wrap
+  width: 100%
+  margin: 33px 0
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+.main-cabinet-user__wrap_item
+  border: solid 1px #e7e7e7
+  padding: 30px
+  margin: 0 30px 17px 0
+  &:last-child
+    margin: 0 0 17px
+
+.manager-information__box
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  width: 340px
+  .btn
+    max-width: none
+    height: 49px
+    font-size: 17px
+    font-weight: bold
+
+.manager-information__photo
+  width: 225px
+  height: 150px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+
+.manager-information
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+.manager-information__content
+  width: calc(100% - 225px)
+  padding: 0 0 0 20px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.manager-information__title
+  color: #050505
+  font-size: 14px
+  font-weight: 500
+  margin: 0 0 auto
+
+.list-info
+  width: 100%
+
+.list-info__item
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 10px
+  color: #050505
+  font-size: 14px
+  font-weight: 300
+  &:last-child
+    margin: 0
+
+.list-info__icon
+  width: 15px
+  min-width: 15px
+  margin: 0 15px 0 0
+
+.phone-cabinet, .mail-cabinet
+  display: flex
+  align-items: center
+  color: #050505
+
+.payment-profiles__title
+  width: 100%
+  margin: 0 0 40px
+  color: #050505
+  font-size: 16px
+  font-weight: 500
+
+.payment-profiles__box
+  margin: 0 0 40px
+  &:last-child
+    margin: 0
+
+.payment-profiles__subtitle
+  margin: 0 0 20px
+  font-size: 14px
+  font-weight: 500
+  color: #050505
+
+.payment-profiles__line
+  width: 100%
+  border: solid 1px #bababa
+  padding: 0 23px 0 35px
+  min-height: 59px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  .button-group
+    display: flex
+    align-items: center
+
+
+.payment-profiles__text
+  font-size: 14px
+  font-weight: 300
+  color: #212121
+
+.btn-edit
+  margin: 0 24px 0 0
+  width: 25px
+  height: 25px
+
+.btn-menu__cabinet
+  display: none
+  align-items: center
+  flex-direction: column
+  justify-content: space-between
+  width: 35px
+  height: 30px
+  background: #222
+  border-radius: 3px
+  padding: 7px 5px
+  cursor: pointer
+  margin: 0 0 0 20px
+  span
+    display: block
+    width: 100%
+    height: 2px
+    background: #fff
+
+//breadcrumb-cabinet
+.breadcrumb-cabinet
+  margin: 0 0 30px
+
+.main-cabinet-button__group
+  justify-content: flex-start
+  .btn
+    max-width: 280px
+    margin: 0 30px 10px 0
+    height: 49px
+    font-size: 17px
+    font-weight: bold
+    &:last-child
+      margin: 0 0 10px
+
+.form-cabinet
+  margin: 60px 0 0
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: flex-start
+  width: 100%
+  font-size: 14px
+  font-weight: 300
+  .form-group__title
+    margin: 0 0 20px
+  .form-group
+    max-width: 450px
+    width: 100%
+    margin: 0 30px 0 0
+    &:last-child
+      margin: 0
+  label
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+  input
+    border-radius: 0
+    height: 59px
+    padding: 0 19px
+    font-size: 14px
+    font-weight: 300
+    color: #212121
+    &::placeholder
+      color: #212121
+  button
+    margin: 20px 0 0
+    height: 49px
+    max-width: 220px
+    font-size: 17px
+  .list-radio__item
+    margin: 0 29px 0 0
+    &:last-child
+      margin: 0
+
+  .list-radio
+    width: auto
+    margin: 0 0 0 39px
+    font-size: 14px
+
+.clarification
+  width: 100%
+  padding: 0 0 0 20px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+
+.form-cabinet__title
+  margin: 0 0 40px
+  font-size: 18px
+  font-family: $myriad
+  font-weight: normal
+
+.checkbox-cabinet
+  .checkbox-custom
+    width: 24px
+    height: 24px
+    min-width: 24px
+    border-radius: 0
+
+.required-fields
+  color: #8c8c8c
+  font-size: 14px
+  font-weight: 500
+
+.consent__form-cabinet
+  margin: 30px 0
+  padding: 0
+  max-width: 470px
+  width: 100%
+
+.main-cabinet-editing__description
+  margin: 0 0 30px
+  font-size: 18px
+  font-family: $myriad
+  font-weight: normal
+
+.line-wrapper
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .btn
+    height: 49px
+    max-width: 220px
+    font-size: 17px
+    font-weight: bold
+
+.total-orders
+  display: flex
+  align-items: center
+  margin: 0 56px 0 0
+  font-size: 18px
+  font-family: $myriad
+  font-weight: normal
+
+
+.total-orders__val
+  margin: 0 0 0 5px
+
+.table-contacts
+  margin: 50px 0 0
+  font-size: 14px
+
+.table-contacts__city
+  width: 19%
+
+.table-contacts__outside
+  width: 29%
+
+.table-contacts__house, .table-contacts__housing, .table-contacts__office
+  width: 15%
+
+.total-orders__history
+  width: 100%
+  border: solid 1px #e7e7e7
+  padding: 0 32px
+  min-height: 63px
+  font-size: 18px
+  font-family: $myriad
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.links-view
+  width: 19px
+  height: 12px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.table-history__number
+  width: 15%
+
+.table-history__date
+  width: 25%
+
+.table-history__sum
+  width: 15%
+
+.table-history__products
+  width: 20%
+
+.table-history__repeat
+  width: 25%
+
+.table-history
+  .table__body
+    font-weight: 300
+
+.list-product
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: center
+  width: 100%
+  li
+    p
+      display: inline
+    &:after
+      content: '/'
+      display: inline-block
+      margin: 0 5px
+    &:last-child
+      &:after
+        display: none
+
+.btn_repeat
+  border: solid 1px #000000
+  height: 32px
+  max-width: none
+  color: #000
+  font-size: 14px
+  font-weight: 300
+  border-radius: 3px
+  letter-spacing: 0
+
+.main-cabinet-user
+  .btn__add_card
+    max-width: 220px
+    margin: 30px 0 0 auto
+    font-size: 17px
+    height: 49px
+
+.main-cabinet-user-view__title
+  width: 100%
+  margin: 0 0 30px
+  font-size: 18px
+  font-family: $myriad
+  font-weight: normal
+
+.info-orders__table
+  margin: 0 0 60px
+  .table__body
+    font-weight: 300
+
+.info-orders__table_number, .info-orders__table_phone
+  width: 14%
+
+.info-orders__table_name
+  width: 26%
+
+.info-orders__table_comment
+  width: 30%
+
+.info-orders__table_date
+  width: 16%
+
+.basket__table_view
+  .basket__table_name
+    width: 38%
+  .basket__table_photo
+    width: 15%
+  .basket__table_sum
+    width: 11%
+
+.basket__table_article
+  width: 11%
+
+.total-sum
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  margin: 40px 0 0
+  color: #050505
+  font-size: 14px
+  font-weight: 500
+
+.total-sum__val
+  font-weight: 300
+  margin: 0 0 0 5px

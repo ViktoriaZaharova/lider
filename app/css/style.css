@@ -40,6 +40,13 @@
   src: url("../fonts/MyriadPro/MyriadPro-Bold.eot");
   src: url("../fonts/MyriadPro/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Bold.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "myriad";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/MyriadPro/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format("truetype"); }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -637,6 +644,8 @@ header {
   position: relative;
   margin: 7px 30px 0 0;
   width: 34px; }
+  .basket__icon img {
+    width: 100%; }
 
 .basket__val {
   width: 19px;
@@ -1488,7 +1497,12 @@ label {
   top: 100%;
   background: #fff;
   padding: 10px;
-  display: none; }
+  display: none;
+  z-index: 2; }
+  .header__box_dropdown .phone {
+    font-size: 13px; }
+  .header__box_dropdown span {
+    font-size: 11px; }
 
 .btn__mobile_catalog {
   max-width: none;
@@ -3078,16 +3092,16 @@ label {
     margin: 0 0 0 14px;
     text-align: center; }
 
-.ui-widget.ui-widget-content {
+.ui-slider, .ui-widget.ui-widget-content.ui-slider {
   border: none;
     border-radius: 1.5px;
   height: 3px;
   background: #e6e6e6; }
 
-.ui-widget-header {
+.ui-slider-range {
   background: #ff393c; }
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+.ui-slider .ui-slider-handle {
   width: 14px;
   height: 14px;
   border: none;
