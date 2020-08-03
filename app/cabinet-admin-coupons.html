@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lider</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cabinet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="content">
+
+        <header class="header-admin">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+
+                <div class="btn-menu__cabinet">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </header>
+
+
+        <main class="main-cabinet-user main-cabinet-user-view main-cabinet-admin">
+            <div class="container">
+                <div class="cabinet-sidebar">
+                    <div class="btn-close__menu"></div>
+                    <ul class="cabinet-menu">
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-orders.html" class="cabinet-menu__links"
+                                                          title="">Заказы</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-profile.html" class="cabinet-menu__links"
+                                                          title="">Профили</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-clients.html" class="cabinet-menu__links"
+                                                          title="">Клиенты</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-articles.html" class="cabinet-menu__links"
+                                                          title="">Статьи</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-coupons.html" class="cabinet-menu__links"
+                                                          title="">Купоны</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-managers.html" class="cabinet-menu__links"
+                                                          title="">Менеджеры</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-rulers.html" class="cabinet-menu__links"
+                                                          title="">Правила корзины</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-banners.html" class="cabinet-menu__links"
+                                                          title="">Баннеры</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-sales.html" class="cabinet-menu__links"
+                                                          title="">Акции</a></li>
+                    </ul>
+                </div>
+
+                <div class="main-cabinet-user__content main-cabinet-admin__content">
+                    <ul class="breadcrumb breadcrumb-cabinet">
+                        <li>
+                            <a href="cabinet-admin-index.html" title="">
+                                <span>ГЛАВНАЯ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cabinet-admin-index.html" title="">
+                                <span>личный кабинет</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <h1>Действующие купоны</h1>
+                    <div class="main-cabinet-button__group">
+                        <a href="#" class="btn btn_black" title="">
+                        <span class="icon-plus">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                 y="0px"
+                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216
+			v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"/>
+	</g>
+</g>
+</svg>
+
+                        </span>
+                            Добавить купон
+                        </a>
+                    </div>
+
+                    <div class="coupons-table_admin table w-100">
+                        <div class="table__head">
+                            <div class="table__th coupons-table__name">Название купона</div>
+                            <div class="table__th coupons-table__sale">Телефон</div>
+                            <div class="table__th coupons-table__sum">Сумма от</div>
+                            <div class="table__th coupons-table__active">Активация(0 - без ограничений) </div>
+                            <div class="table__th coupons-table__date">Дата создания</div>
+                            <div class="table__th coupons-table__delete">Удалить</div>
+                        </div>
+
+                        <div class="table__body">
+                            <div class="table-body_line">
+                                <div class="table__td coupons-table__name">
+                                    <p>LIDER-3</p>
+                                </div>
+                                <div class="table__td coupons-table__sale">
+                                    <p>7 %</p>
+                                </div>
+                                <div class="table__td coupons-table__sum">
+                                    <p>5000</p>
+                                </div>
+                                <div class="table__td coupons-table__active">
+                                    <p>0</p>
+                                </div>
+                                <div class="table__td coupons-table__date">
+                                    <p>2020-06-20</p>
+                                </div>
+                                <div class="table__td coupons-table__delete">
+                                    <a href="#" class="btn-delete" title=""><img src="images/delete.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="table-body_line">
+                                <div class="table__td coupons-table__name">
+                                    <p>LIDER-3</p>
+                                </div>
+                                <div class="table__td coupons-table__sale">
+                                    <p>7 %</p>
+                                </div>
+                                <div class="table__td coupons-table__sum">
+                                    <p>5000</p>
+                                </div>
+                                <div class="table__td coupons-table__active">
+                                    <p>0</p>
+                                </div>
+                                <div class="table__td coupons-table__date">
+                                    <p>2020-06-20</p>
+                                </div>
+                                <div class="table__td coupons-table__delete">
+                                    <a href="#" class="btn-delete" title=""><img src="images/delete.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="table-body_line">
+                                <div class="table__td coupons-table__name">
+                                    <p>LIDER-3</p>
+                                </div>
+                                <div class="table__td coupons-table__sale">
+                                    <p>7 %</p>
+                                </div>
+                                <div class="table__td coupons-table__sum">
+                                    <p>5000</p>
+                                </div>
+                                <div class="table__td coupons-table__active">
+                                    <p>0</p>
+                                </div>
+                                <div class="table__td coupons-table__date">
+                                    <p>2020-06-20</p>
+                                </div>
+                                <div class="table__td coupons-table__delete">
+                                    <a href="#" class="btn-delete" title=""><img src="images/delete.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer-admin">
+        <div class="container">
+            <ul class="list__payment">
+                <li class="list__payment_item"><img src="images/mastercard.svg" alt=""></li>
+                <li class="list__payment_item"><img src="images/mastercard.svg" alt=""></li>
+                <li class="list__payment_item"><img src="images/visa.svg" alt=""></li>
+                <li class="list__payment_item"><img src="images/mir.svg" alt=""></li>
+            </ul>
+
+            <div class="copyright">
+                <p>© ООО “Лидер” - 2020</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay"></div>
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/datepicker-ru.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

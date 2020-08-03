@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lider</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cabinet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="content">
+
+        <header class="header-admin">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+
+                <div class="btn-menu__cabinet">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </header>
+
+
+        <main class="main-cabinet-user main-cabinet-user-view main-cabinet-admin">
+            <div class="container">
+                <div class="cabinet-sidebar">
+                    <div class="btn-close__menu"></div>
+                    <ul class="cabinet-menu">
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-orders.html" class="cabinet-menu__links"
+                                                          title="">Заказы</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-profile.html" class="cabinet-menu__links"
+                                                          title="">Профили</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-clients.html" class="cabinet-menu__links"
+                                                          title="">Клиенты</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-articles.html" class="cabinet-menu__links"
+                                                          title="">Статьи</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-coupons.html" class="cabinet-menu__links"
+                                                          title="">Купоны</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-managers.html" class="cabinet-menu__links"
+                                                          title="">Менеджеры</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-rulers.html" class="cabinet-menu__links"
+                                                          title="">Правила корзины</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-banners.html" class="cabinet-menu__links"
+                                                          title="">Баннеры</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-sales.html" class="cabinet-menu__links"
+                                                          title="">Акции</a></li>
+                    </ul>
+                </div>
+
+                <div class="main-cabinet-user__content main-cabinet-admin__content">
+                    <ul class="breadcrumb breadcrumb-cabinet">
+                        <li>
+                            <a href="cabinet-admin-index.html" title="">
+                                <span>ГЛАВНАЯ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cabinet-admin-index.html" title="">
+                                <span>личный кабинет</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <h1>Просмотр заказа №12015</h1>
+
+                    <div class="main-cabinet-user-view__title">Информация о заказе</div>
+
+                    <div class="info-orders__table_admin table w-100">
+                        <div class="table__head">
+                            <div class="table__th info-orders__table_name">Имя клиента</div>
+                            <div class="table__th info-orders__table_phone">Телефон</div>
+                            <div class="table__th info-orders__table_pay">Способ оплаты</div>
+                            <div class="table__th info-orders__table_delivery">Способ доставки</div>
+                            <div class="table__th info-orders__table_date">Дата заказа</div>
+                            <div class="table__th info-orders__table_sum">Общая сумма заказа</div>
+                        </div>
+
+                        <div class="table__body">
+                            <div class="table-body_line">
+                                <div class="table__td info-orders__table_name">
+                                    <p>ИП Моцный Артем
+                                        Александрович</p>
+                                </div>
+                                <div class="table__td info-orders__table_phone">
+                                    <p>+79152365478</p>
+                                </div>
+                                <div class="table__td info-orders__table_pay">
+                                    <p>Безналичный рассчет</p>
+                                </div>
+                                <div class="table__td info-orders__table_delivery">
+                                    <p>Доставка по адресу:</p>
+                                    <p>Долгопрудный, Первомайская 17</p>
+                                </div>
+                                <div class="table__td info-orders__table_date">
+                                    <p>17.02.2020</p>
+                                    <p>10:05:07</p>
+                                </div>
+                                <div class="table__td info-orders__table_sum">
+                                    <p>15 200 руб</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-cabinet-user-view__title">Товары в заказе</div>
+                    <div class="basket__table basket__table_view basket__table_view_admin table w-100">
+                        <div class="table__head">
+                            <div class="table__th basket__table_photo">Фото товара</div>
+                            <div class="table__th basket__table_article">Артикул</div>
+                            <div class="table__th basket__table_name">Название</div>
+                            <div class="table__th basket__table_price">Цена</div>
+                            <div class="table__th basket__table_quantity">Количество</div>
+                        </div>
+
+                        <div class="table__body">
+                            <div class="table-body_line">
+                                <div class="table__td basket__table_photo">
+                                    <a href="#" class="basket__table_img" title=""><img src="images/product4.png"
+                                                                                        alt=""></a>
+                                </div>
+                                <div class="table__td basket__table_article">
+                                    <p>40-08016</p>
+                                </div>
+                                <div class="table__td basket__table_name">
+                                    <a href="#" class="basket__table_title" title="">Салфетки прочные для уборки
+                                        целлюлозные
+                                        15,5 см на 15.5 см PRO</a>
+                                </div>
+                                <div class="table__td basket__table_price">
+                                    <p>72.54 руб</p>
+                                </div>
+                                <div class="table__td basket__table_quantity">
+                                    <p>134</p>
+                                </div>
+                            </div>
+                            <div class="table-body_line">
+                                <div class="table__td basket__table_photo">
+                                    <a href="#" class="basket__table_img" title=""><img src="images/product3.jpg"
+                                                                                        alt=""></a>
+                                </div>
+                                <div class="table__td basket__table_article">
+                                    <p>40-08016</p>
+                                </div>
+                                <div class="table__td basket__table_name">
+                                    <a href="#" class="basket__table_title" title="">Салфетки прочные для уборки
+                                        целлюлозные
+                                        15,5 см на 15.5 см PRO</a>
+                                </div>
+                                <div class="table__td basket__table_price">
+                                    <p>72.54 руб</p>
+                                </div>
+                                <div class="table__td basket__table_quantity">
+                                    <p>134</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer-admin">
+        <div class="container">
+            <ul class="list__payment">
+                <li class="list__payment_item"><img src="images/mastercard.svg" alt=""></li>
+                <li class="list__payment_item"><img src="images/mastercard.svg" alt=""></li>
+                <li class="list__payment_item"><img src="images/visa.svg" alt=""></li>
+                <li class="list__payment_item"><img src="images/mir.svg" alt=""></li>
+            </ul>
+
+            <div class="copyright">
+                <p>© ООО “Лидер” - 2020</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay"></div>
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/datepicker-ru.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

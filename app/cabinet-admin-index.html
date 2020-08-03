@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lider</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cabinet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="content">
+
+        <header class="header-admin">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+
+                <div class="btn-menu__cabinet">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </header>
+
+
+        <main class="main-cabinet-user main-cabinet-admin">
+            <div class="container">
+                <div class="cabinet-sidebar">
+                    <div class="btn-close__menu"></div>
+                    <ul class="cabinet-menu">
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-clients.html" class="cabinet-menu__links"
+                                                          title="">Клиенты</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-articles.html" class="cabinet-menu__links"
+                                                          title="">Статьи</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-coupons.html" class="cabinet-menu__links"
+                                                          title="">Купоны</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-managers.html" class="cabinet-menu__links"
+                                                          title="">Менеджеры</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-rulers.html" class="cabinet-menu__links"
+                                                          title="">Правила корзины</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-banners.html" class="cabinet-menu__links"
+                                                          title="">Баннеры</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-sales.html" class="cabinet-menu__links"
+                                                          title="">Акции</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-requisites.html"
+                                                          class="cabinet-menu__links" title="">Реквизиты</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-reports.html" class="cabinet-menu__links"
+                                                          title="">Отчеты</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-hits.html" class="cabinet-menu__links"
+                                                          title="">Хиты продаж</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-sale.html" class="cabinet-menu__links"
+                                                          title="">Блок акций</a></li>
+                    </ul>
+                </div>
+
+                <div class="main-cabinet-user__content main-cabinet-admin__content">
+                    <ul class="breadcrumb breadcrumb-cabinet">
+                        <li>
+                            <a href="cabinet-admin-index.html" title="">
+                                <span>ГЛАВНАЯ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cabinet-admin-index.html" title="">
+                                <span>личный кабинет</span>
+                            </a>
+                        </li>
+                    </ul>
+
+
+                    <h1>Кабинет администратора</h1>
+
+                    <div class="main-cabinet-admin__wrapper w-100">
+
+                        <div class="main-cabinet-admin__wrapper-left">
+                            <div class="table w-100 table-admin__home border-none">
+                                <div class="table-admin__name">
+                                    <div class="table-admin__name_title">Данные системы</div>
+                                    <div class="table-admin__name_icon"><img src="images/arrow-right-grey2.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="table__body">
+                                    <div class="table-body_line">
+                                        <div class="table__td">
+                                            <p><strong>Всего:</strong> 1811 заказов</p>
+                                        </div>
+                                        <div class="table__td">
+                                            <p><strong>Зарегистрировалось новых:</strong> 0</p>
+                                        </div>
+                                        <div class="table__td">
+                                            <p><strong>Всего посетителей:</strong> 2356</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="admin-manages">
+                            <p>Ваш личный менеджер</p>
+
+                            <div class="admin-manages__title">
+                                <div class="admin-manages__name">Виталий Иванов</div>
+                                <div class="admin-manages__icon"><img src="images/arrow-right.png" alt=""></div>
+                            </div>
+
+                            <div class="admin-manages__deal">Всего: 220 сделок</div>
+                        </div>
+
+                        <div class="dynamic-wrapper">
+                            <div class="dynamics-of-orders">
+                                <div class="dynamics-of-orders__title">Динамика заказов</div>
+
+                                <div class="dynamics-of-orders__box"><img src="images/diagram1.jpg" alt=""></div>
+                            </div>
+
+                            <div class="share-orders">
+                                <div class="dynamics-of-orders__title">Доля заказов по суммам</div>
+                                
+                                <div class="share-orders__box"><img src="images/diagram2.jpg" alt=""></div>
+                            </div>
+                        </div>
+
+                        <div class="statistics__wrapper">
+                            <label class="select-admin select-admin__statistic">
+                                <select name="select">
+                                    <option value="Статистика за вчера">Статистика за вчера</option>
+                                    <option value="Статистика за вчера">Статистика за вчера</option>
+                                    <option value="Статистика за вчера">Статистика за вчера</option>
+                                </select>
+                            </label>
+
+                            <div class="statistics__indicators">
+                                <div class="statistics__box">
+                                    <p>Сумма заказов за вчера</p>
+
+                                    <div class="statistics__box_val">
+                                        22 000 <div class="currency">руб</div>
+                                    </div>
+                                </div>
+
+                                <div class="statistics__box">
+                                    <p>Средний чек</p>
+
+                                    <div class="statistics__box_val">
+                                        2 000 <div class="currency">руб</div>
+                                    </div>
+                                </div>
+
+                                <div class="statistics__box">
+                                    <p>Общая сумма заказов</p>
+
+                                    <div class="statistics__box_val">
+                                        135 000 <div class="currency">руб</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table w-100 table-last__orders border-none">
+                        <div class="table-admin__name">
+                            <div class="table-admin__name_title">Последние заказы</div>
+                            <div class="table-admin__name_icon"><img src="images/arrow-right-grey2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="table__head">
+                            <div class="table__th">Номер заказа</div>
+                            <div class="table__th">Дата заказа</div>
+                            <div class="table__th">Количество товаров</div>
+                            <div class="table__th">Сумма</div>
+                            <div class="table__th">Клиент</div>
+                            <div class="table__th">Номер клиента</div>
+                        </div>
+
+                        <div class="table__body">
+                            <div class="table-body_line">
+                                <div class="table__td">
+                                    <p>20102</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>21.09.2018</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>3 товара</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>1 000 руб</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>Иван Иванов</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>85859</p>
+                                </div>
+                            </div>
+                            <div class="table-body_line">
+                                <div class="table__td">
+                                    <p>20102</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>21.09.2018</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>3 товара</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>1 000 руб</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>Иван Иванов</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>85859</p>
+                                </div>
+                            </div>
+                            <div class="table-body_line">
+                                <div class="table__td">
+                                    <p>20102</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>21.09.2018</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>3 товара</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>1 000 руб</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>Иван Иванов</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>85859</p>
+                                </div>
+                            </div>
+                            <div class="table-body_line">
+                                <div class="table__td">
+                                    <p>20102</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>21.09.2018</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>3 товара</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>1 000 руб</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>Иван Иванов</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>85859</p>
+                                </div>
+                            </div>
+                            <div class="table-body_line">
+                                <div class="table__td">
+                                    <p>20102</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>21.09.2018</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>3 товара</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>1 000 руб</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>Иван Иванов</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>85859</p>
+                                </div>
+                            </div>
+                            <div class="table-body_line">
+                                <div class="table__td">
+                                    <p>20102</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>21.09.2018</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>3 товара</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>1 000 руб</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>Иван Иванов</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>85859</p>
+                                </div>
+                            </div>
+                            <div class="table-body_line">
+                                <div class="table__td">
+                                    <p>20102</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>21.09.2018</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>3 товара</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>1 000 руб</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>Иван Иванов</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>85859</p>
+                                </div>
+                            </div>
+                            <div class="table-body_line">
+                                <div class="table__td">
+                                    <p>20102</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>21.09.2018</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>3 товара</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>1 000 руб</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>Иван Иванов</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>85859</p>
+                                </div>
+                            </div>
+                            <div class="table-body_line">
+                                <div class="table__td">
+                                    <p>20102</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>21.09.2018</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>3 товара</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>1 000 руб</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>Иван Иванов</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>85859</p>
+                                </div>
+                            </div>
+                            <div class="table-body_line">
+                                <div class="table__td">
+                                    <p>20102</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>21.09.2018</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>3 товара</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>1 000 руб</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>Иван Иванов</p>
+                                </div>
+                                <div class="table__td">
+                                    <p>85859</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer-admin">
+        <div class="container">
+            <ul class="list__payment">
+                <li class="list__payment_item"><img src="images/mastercard.svg" alt=""></li>
+                <li class="list__payment_item"><img src="images/mastercard.svg" alt=""></li>
+                <li class="list__payment_item"><img src="images/visa.svg" alt=""></li>
+                <li class="list__payment_item"><img src="images/mir.svg" alt=""></li>
+            </ul>
+
+            <div class="copyright">
+                <p>© ООО “Лидер” - 2020</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay"></div>
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/datepicker-ru.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

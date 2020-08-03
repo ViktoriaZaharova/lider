@@ -2766,6 +2766,12 @@ label {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.btn-delete {
+  width: 20px;
+  height: 25px; }
+  .btn-delete img {
+    width: 100%; }
+
 .basket__table_title {
   color: #3451bc; }
 
