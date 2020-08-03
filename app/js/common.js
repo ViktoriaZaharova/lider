@@ -20,8 +20,8 @@ $('.product-section__image_slider_max').slick({
     slidesToShow: 1,
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
-    asNavFor: '.slider-nav',
-    infinite: false,
+    // asNavFor: '.slider-nav',
+    // infinite: false,
     useTransform: true,
 });
 
