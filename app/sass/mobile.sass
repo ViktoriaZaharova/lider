@@ -117,6 +117,9 @@
     .form-group
       margin: 0
 
+  .form-add-article .form-group
+    max-width: 450px
+
 @media only screen and (max-width : 1370px)
   .category-section__wrapper
     .col-25
@@ -271,6 +274,19 @@
   .form-cabinet .list-radio
     margin: 0 0 0 20px
 
+  .form-add-article .form-group
+    max-width: 300px
+
+  .form-add-article .form-group__file
+    max-width: 420px
+
+  .profile-info__manager, .profile-info__box
+    width: 390px
+
+  .profile-info__box_requisites
+    width: 100%
+
+
 @media only screen and (max-width : 1199px)
   .main-menu
     margin: 0 auto 0 40px
@@ -412,6 +428,19 @@
   .share-orders .dynamics-of-orders__title
     margin: 0 0 10px
 
+  .articles-table__description
+    width: 33%
+
+  .articles-table__actions
+    width: 16%
+
+  .profile-info__manager, .profile-info__box
+    width: 100%
+    margin-right: 0
+
+  .form-requisites label
+    max-width: 350px
+
 @media only screen and (max-width : 1160px)
   .content-wrapper .col-20
     width: 33.3%
@@ -519,6 +548,21 @@
   .info-orders__table_admin
     font-size: 12px
 
+
+  .form-add-article
+    .form-group
+      max-width: none
+      margin: 0
+    button
+      margin: 30px auto 0
+
+  .form-add-manager .form-group
+    max-width: none
+    margin: 0
+
+  .form-add-manager .file-result__img
+    width: 200px
+
 @media only screen and (max-width : 1100px)
   .form-cabinet .form-group
     max-width: none
@@ -534,6 +578,21 @@
 
   .info-orders__table_admin .info-orders__table_phone
     width: 17%
+
+  .rulers-table__name
+    width: 26%
+
+  .rulers-table__quantity
+    width: 18%
+
+  .rulers-table__condition
+    width: 14%
+
+  .rulers-table__delete
+    width: 15%
+
+  .table-profile__admin .info-orders__table_phone, .table-profile__admin .info-orders__table_name
+    width: 22%
 
 
 @media only screen and (max-width : 1060px)
@@ -595,6 +654,36 @@
 
   .product-section__image
     width: 100%
+
+  .form-coupons
+    label
+      max-width: 280px
+
+  .sales-table__admin
+    font-size: 12px
+
+  .sales-table__description
+    width: 32%
+
+  .sales-table__actions
+    width: 17%
+
+  .links-banners
+    font-size: 10px
+
+  .form-rulers label
+    max-width: none
+
+  .info-orders__table_profile
+    width: 16%
+
+  .info-orders__table_contacts
+    width: 20%
+
+  .table-profile__admin-pay
+    .table__body
+      font-size: 11px
+
 
 @media only screen and (max-width : 992px)
   .main-menu__links, .location, .header__links
@@ -769,6 +858,10 @@
   .coupons-table_admin
     font-size: 12px
 
+  .form-requisites label
+    max-width: none
+    margin: 0 0 10px
+
 @media only screen and (max-width : 940px)
   .news__wrapper_right
     width: 100%
@@ -793,6 +886,12 @@
     width: calc(100% - 260px)
     h1
       letter-spacing: 0
+
+  .managers-table__photo
+    width: 18%
+
+  .managers-table__phone-add
+    width: 18%
 
 @media only screen and (max-width : 860px)
   .home-category__links
@@ -888,6 +987,24 @@
   .basket__table_view_admin .basket__table_name
     width: 42%
 
+  .links-banners
+    font-size: 8px
+
+  .cabinet-menu__links
+    padding: 0 20px
+
+  .cabinet-sidebar
+    width: 250px
+
+  .main-cabinet-user__content
+    width: calc(100% - 250px)
+
+  .info-orders__table_address-pay
+    width: 20%
+
+  .info-orders__table_contacts
+    width: 22%
+
 @media only screen and (max-width : 800px)
   .logo
     font-size: 10px
@@ -924,6 +1041,7 @@
 
   .footer__box
     margin: 10px 0 0
+
 
 
 
@@ -1039,7 +1157,6 @@
 
   .cabinet-menu__links
     height: 40px
-    padding: 0 20px
     font-size: 16px
 
   .main-cabinet-user
@@ -1234,7 +1351,7 @@
   .shopping-basket__total .button__group .btn
     font-size: 15px
 
-  .basket__table, .table-contacts, .info-orders__table, .table-last__orders, .info-orders__table_admin, .coupons-table_admin
+  .basket__table, .table-contacts, .info-orders__table, .table-last__orders, .info-orders__table_admin, .coupons-table_admin, .sales-table__admin
     .table__head
       display: none
 
@@ -1342,6 +1459,98 @@
         border-bottom: solid 1px #f3f3f3
       &:nth-child(3)
         border-right: none
+
+  .form-coupons
+    label
+      max-width: none
+
+  .sales-table__banner, .articles-table__name, .managers-table__name, .info-orders__table_profile, .info-orders__table_number_orders, .info-orders__table_data_orders
+    width: 30%
+    border:
+      bottom: solid 1px #f3f3f3
+
+  .managers-table__phone, .table-profile__admin .info-orders__table_name
+    width: 50%
+    border:
+      bottom: solid 1px #f3f3f3
+
+  .table-profile__admin .info-orders__table_phone
+    width: 50%
+    border: none
+      bottom: solid 1px #f3f3f3
+
+  .info-orders__table_mail, .info-orders__table_address, .info-orders__table_pay_orders, .info-orders__table_sum_orders
+    width: 50%
+
+  .managers-table__phone-add
+    width: 20%
+    border: none
+      bottom: solid 1px #f3f3f3
+
+  .managers-table__mail
+    width: 60%
+
+  .managers-table__photo, .info-orders__table_contacts
+    width: 40%
+
+  .info-orders__table_delivery_orders
+    width: 40%
+    border: none
+      bottom: solid 1px #f3f3f3
+
+  .sales-table__name, .articles-table__title, .info-orders__table_requisites
+    width: 70%
+    border: none
+      bottom: solid 1px #f3f3f3
+
+  .sales-table__description, .articles-table__description
+    width: 70%
+
+  .articles-table__description
+    border:
+      bottom: solid 1px #f3f3f3
+
+  .articles-table__photo
+    width: 30%
+    border: none
+      bottom: solid 1px #f3f3f3
+
+  .articles-table__actions
+    width: 100%
+
+  .sales-table__actions, .info-orders__table_full-name, .info-orders__table_address-pay
+    width: 30%
+
+  .main-cabinet-button__group .btn
+    font-size: 15px
+
+  .file-upp
+    width: 160px
+    height: 40px
+    font-size: 15px
+    margin: 0 10px 0 0
+
+  .js-value, .form-admin-cabinet button
+    font-size: 15px
+
+  .form-admin-cabinet
+    .file-upp
+      margin: 0 10px 0 0
+
+  .cabinet-admin__description
+    margin: 0 0 20px
+
+  .file-result__img
+    width: 180px
+
+  .links-banners
+    font-size: 10px
+
+  .form-rulers__wrapper
+    padding: 15px
+
+  .profile-info__manager, .profile-info__box
+    padding: 15px
 
 @media only screen and (max-width : 575px)
   .banner-products__news, .banner-products__hits
@@ -1541,6 +1750,25 @@
     border:
       right: solid 1px #f3f3f3
 
+  .table-profile__admin .info-orders__table_name
+    width: 50%
+    border:
+      bottom: solid 1px #f3f3f3
+
+  .table-profile__admin .info-orders__table_phone
+    width: 50%
+    border: none
+      bottom: solid 1px #f3f3f3
+
+  .info-orders__table_mail, .info-orders__table_address
+    width: 50%
+
+  .attention-profile
+    font-size: 16px
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+
 
 @media only screen and (max-width : 530px)
   .opportunities__box
@@ -1696,6 +1924,31 @@
   .related-products__title
     margin: 0 0 10px
     width: 100%
+
+  .header-admin
+    .logo
+      max-width: 200px
+
+  .list-characteristics__item
+    flex-direction: column
+    align-items: flex-start
+    border-bottom: 1px solid #e7e7e7
+    &:last-child
+      border: none
+
+    &:before
+      display: none
+    p
+      margin: 0 0 5px
+      padding: 0
+      width: 100%
+    span
+      padding: 0
+      width: 100%
+      text-align: left
+
+  .profile-info__box_title
+    margin: 0 0 20px
 
 @media only screen and (max-width: 420px)
   .logo__img

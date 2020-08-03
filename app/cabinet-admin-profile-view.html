@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lider</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cabinet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="content">
+
+        <header class="header-admin">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+
+                <div class="btn-menu__cabinet">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+        </header>
+
+
+        <main class="main-cabinet-user main-cabinet-user-view main-cabinet-admin">
+            <div class="container">
+                <div class="cabinet-sidebar">
+                    <div class="btn-close__menu"></div>
+                    <ul class="cabinet-menu">
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-orders.html" class="cabinet-menu__links"
+                                                          title="">Заказы</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-profile.html" class="cabinet-menu__links"
+                                                          title="">Профили</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-clients.html" class="cabinet-menu__links"
+                                                          title="">Клиенты</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-articles.html" class="cabinet-menu__links"
+                                                          title="">Статьи</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-coupons.html" class="cabinet-menu__links"
+                                                          title="">Купоны</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-managers.html" class="cabinet-menu__links"
+                                                          title="">Менеджеры</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-rulers.html" class="cabinet-menu__links"
+                                                          title="">Правила корзины</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-banners.html" class="cabinet-menu__links"
+                                                          title="">Баннеры</a></li>
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-sales.html" class="cabinet-menu__links"
+                                                          title="">Акции</a></li>
+                    </ul>
+                </div>
+
+                <div class="main-cabinet-user__content main-cabinet-admin__content">
+                    <ul class="breadcrumb breadcrumb-cabinet">
+                        <li>
+                            <a href="cabinet-admin-index.html" title="">
+                                <span>ГЛАВНАЯ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cabinet-admin-profile.html" title="">
+                                <span>Просмотр профиля</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <h1>Просмотр профиля</h1>
+
+                    <div class="profile-wrapper w-100">
+                        <div class="profile-info__box">
+                            <div class="profile-info__box_title">Данные профиля:</div>
+                            <ul class="list-characteristics">
+                                <li class="list-characteristics__item">
+                                    <p>Название профиля: </p>
+                                    <span>Med Yu Med</span>
+                                </li>
+                                <li class="list-characteristics__item">
+                                    <p>ИНН: </p>
+                                    <span>7703430779</span>
+                                </li>
+                                <li class="list-characteristics__item">
+                                    <p>КПП:</p>
+                                    <span>770301001</span>
+                                </li>
+                                <li class="list-characteristics__item">
+                                    <p>Наименование:</p>
+                                    <span>ООО Академия ккрасоты</span>
+                                </li>
+                                <li class="list-characteristics__item">
+                                    <p>БИК:Р/С:</p>
+                                    <span>04452568240702810177340017620</span>
+                                </li>
+                                <li class="list-characteristics__item">
+                                    <p>Контакт:</p>
+                                    <span>Виноградова Екатерина</span>
+                                </li>
+                                <li class="list-characteristics__item">
+                                    <p>E-mail:</p>
+                                    <span>kristina@gmail.com</span>
+                                </li>
+                                <li class="list-characteristics__item">
+                                    <p>Телефон:</p>
+                                    <span>+73250642600</span>
+                                </li>
+                                <li class="list-characteristics__item">
+                                    <p>Адрес:</p>
+                                    <span>Оружейный переулок 25 стр1</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="profile-info__manager">
+                            <div class="profile-info__manager_item">
+                                <div class="profile-info__manager_line">
+                                    <p>Менеджер клиента:</p>
+                                    <div class="profile-info__manager_name">
+                                        Виеру Дмитрий
+                                        <div class="icon-arrow"><img src="images/arrow-bottom-grey.png" alt=""></div>
+                                    </div>
+                                </div>
+
+                                <div class="block__hidden_manager">
+                                    <p class="date-profile">Дата создания профиля: <span class="value-profile">12.12.2020</span></p>
+                                    <p>Всего заказов: <span class="value-profile">8</span></p>
+                                    <p>Сумма заказов: <span class="value-profile">152368 руб</span></p>
+                                </div>
+                            </div>
+
+                            <div class="profile-info__manager_item">
+                                <div class="profile-info__manager_line">
+                                    <p>Оператор клиента:</p>
+                                    <div class="profile-info__manager_name">
+                                        Петреева Екатерина
+                                        <div class="icon-arrow"><img src="images/arrow-bottom-grey.png" alt=""></div>
+                                    </div>
+                                </div>
+
+                                <div class="block__hidden_manager">
+                                    <p class="date-profile">Дата создания профиля: <span class="value-profile">12.12.2020</span></p>
+                                    <p>Всего заказов: <span class="value-profile">8</span></p>
+                                    <p>Сумма заказов: <span class="value-profile">152368 руб</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="main-cabinet-user-view__title">Заказы профиля:</div>
+
+                    <div class="info-orders__table_admin table-profile__admin table w-100">
+                        <div class="table__head">
+                            <div class="table__th info-orders__table_number_orders">Номер заказа</div>
+                            <div class="table__th info-orders__table_data_orders">Дата</div>
+                            <div class="table__th info-orders__table_delivery_orders">Способ получения</div>
+                            <div class="table__th info-orders__table_pay_orders">Способ оплаты</div>
+                            <div class="table__th info-orders__table_sum_orders">Сумма заказа</div>
+                        </div>
+
+                        <div class="table__body">
+                            <div class="table-body_line">
+                                <div class="table__td info-orders__table_number_orders">
+                                    <a href="#" class="color_blue" title="">Заказ №10160</a>
+                                </div>
+                                <div class="table__td info-orders__table_data_orders">
+                                    <p>2020-02-14 19:23:52 </p>
+                                </div>
+                                <div class="table__td info-orders__table_delivery_orders">
+                                    <p>Доставка по адресу</p>
+                                </div>
+                                <div class="table__td info-orders__table_pay_orders">
+                                    <p>Безналичный перевод</p>
+                                </div>
+                                <div class="table__td info-orders__table_sum_orders">
+                                    <p>15552.93 руб</p>
+                                </div>
+                            </div>
+                            <div class="table-body_line">
+                                <div class="table__td info-orders__table_number_orders">
+                                    <a href="#" class="color_blue" title="">Заказ №10160</a>
+                                </div>
+                                <div class="table__td info-orders__table_data_orders">
+                                    <p>2020-02-14 19:23:52 </p>
+                                </div>
+                                <div class="table__td info-orders__table_delivery_orders">
+                                    <p>Доставка по адресу</p>
+                                </div>
+                                <div class="table__td info-orders__table_pay_orders">
+                                    <p>Безналичный перевод</p>
+                                </div>
+                                <div class="table__td info-orders__table_sum_orders">
+                                    <p>15552.93 руб</p>
+                                </div>
+                            </div>
+
+                            <div class="table-body_line">
+                                <div class="table__td info-orders__table_number_orders">
+                                    <a href="#" class="color_blue" title="">Заказ №10160</a>
+                                </div>
+                                <div class="table__td info-orders__table_data_orders">
+                                    <p>2020-02-14 19:23:52 </p>
+                                </div>
+                                <div class="table__td info-orders__table_delivery_orders">
+                                    <p>Доставка по адресу</p>
+                                </div>
+                                <div class="table__td info-orders__table_pay_orders">
+                                    <p>Безналичный перевод</p>
+                                </div>
+                                <div class="table__td info-orders__table_sum_orders">
+                                    <p>15552.93 руб</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer-admin">
+        <div class="container">
+            <ul class="list__payment">
+                <li class="list__payment_item"><img src="images/yandex.png" alt=""></li>
+                <li class="list__payment_item"><img src="images/mastercard.svg" alt=""></li>
+                <li class="list__payment_item"><img src="images/mastercard.svg" alt=""></li>
+                <li class="list__payment_item"><img src="images/visa.svg" alt=""></li>
+                <li class="list__payment_item"><img src="images/mir.svg" alt=""></li>
+            </ul>
+
+            <div class="copyright">
+                <p>© ООО “Лидер” - 2020</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay"></div>
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/datepicker-ru.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

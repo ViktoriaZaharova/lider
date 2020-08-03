@@ -79,105 +79,57 @@
                             </a>
                         </li>
                         <li>
-                            <a href="cabinet-admin-index.html" title="">
-                                <span>личный кабинет</span>
+                            <a href="cabinet-admin-banners.html" title="">
+                                <span>Баннеры</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cabinet-admin-banners-add.html" title="">
+                                <span>Добавить баннер</span>
                             </a>
                         </li>
                     </ul>
-                    <h1>Действующие купоны</h1>
-                    <div class="main-cabinet-button__group">
-                        <a href="#" class="btn btn_black" title="">
-                        <span class="icon-plus">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                 y="0px"
-                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g>
-	<g>
-		<path d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216
-			v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"/>
-	</g>
-</g>
-</svg>
+                    <h1>Добавить баннер</h1>
 
-                        </span>
-                            Добавить купон
-                        </a>
-                    </div>
+                    <div class="cabinet-admin__description">* Размер баннера 1127 х 558 px</div>
 
-                    <div class="coupons-table_admin table w-100">
-                        <div class="table__head">
-                            <div class="table__th coupons-table__name">Название купона</div>
-                            <div class="table__th coupons-table__sale">Телефон</div>
-                            <div class="table__th coupons-table__sum">Сумма от</div>
-                            <div class="table__th coupons-table__active">Активация(0 - без ограничений) </div>
-                            <div class="table__th coupons-table__date">Дата создания</div>
-                            <div class="table__th coupons-table__delete">Удалить</div>
+                    <form method="post" class="form-add-file form-admin-cabinet">
+
+                        <div class="file-upp__wrapper">
+                                <span class="form-group__title">Загрузить баннер</span>
+                                <label class="file-upp">
+                                    <span class="icon-plus">
+                                            <img src="images/plus.svg" alt="">
+                                        </span>
+                                    <span class="file-upp-name">Выберите файл</span>
+                                    <input type="file" name="attachment-file" value="1">
+                                </label>
+                            <div class="js-value">Файл не выбран</div>
+
                         </div>
 
-                        <div class="table__body">
-                            <div class="table-body_line">
-                                <div class="table__td coupons-table__name">
-                                    <p>LIDER-3</p>
-                                </div>
-                                <div class="table__td coupons-table__sale">
-                                    <p>7 %</p>
-                                </div>
-                                <div class="table__td coupons-table__sum">
-                                    <p>5000</p>
-                                </div>
-                                <div class="table__td coupons-table__active">
-                                    <p>0</p>
-                                </div>
-                                <div class="table__td coupons-table__date">
-                                    <p>2020-06-20</p>
-                                </div>
-                                <div class="table__td coupons-table__delete">
-                                    <a href="#" class="btn-delete" title=""><img src="images/delete.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="table-body_line">
-                                <div class="table__td coupons-table__name">
-                                    <p>LIDER-3</p>
-                                </div>
-                                <div class="table__td coupons-table__sale">
-                                    <p>7 %</p>
-                                </div>
-                                <div class="table__td coupons-table__sum">
-                                    <p>5000</p>
-                                </div>
-                                <div class="table__td coupons-table__active">
-                                    <p>0</p>
-                                </div>
-                                <div class="table__td coupons-table__date">
-                                    <p>2020-06-20</p>
-                                </div>
-                                <div class="table__td coupons-table__delete">
-                                    <a href="#" class="btn-delete" title=""><img src="images/delete.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="table-body_line">
-                                <div class="table__td coupons-table__name">
-                                    <p>LIDER-3</p>
-                                </div>
-                                <div class="table__td coupons-table__sale">
-                                    <p>7 %</p>
-                                </div>
-                                <div class="table__td coupons-table__sum">
-                                    <p>5000</p>
-                                </div>
-                                <div class="table__td coupons-table__active">
-                                    <p>0</p>
-                                </div>
-                                <div class="table__td coupons-table__date">
-                                    <p>2020-06-20</p>
-                                </div>
-                                <div class="table__td coupons-table__delete">
-                                    <a href="#" class="btn-delete" title=""><img src="images/delete.svg" alt=""></a>
-                                </div>
-                            </div>
+                        <div class="file-result">
+                            <div class="file-result__img"><img src="images/banner-img2.jpg" alt=""></div>
+                            <a href="#" class="btn-delete" title=""><img src="images/delete.svg" alt=""></a>
                         </div>
-                    </div>
+
+                        <label>
+                            <span class="form-group__title">Заголовок для баннера и атрибута alt</span>
+                            <input type="text"
+                                   placeholder=""
+                                   name="name_banner">
+                        </label>
+                        <label>
+                            <span class="form-group__title">Ссылка на страницу, на которую ведет баннер</span>
+                            <input type="text"
+                                   placeholder="http://dlyakota.ru/uploads/posts/2017-11/dlyakota.ru_fotoprikoly-s-kotami_nedovolnye-koty-17-foto_1.jpeg"
+                                   name="link_banner">
+                        </label>
+
+                        <button class="btn btn_black" type="submit">Добавить баннер</button>
+
+                    </form>
+
 
                 </div>
             </div>

@@ -79,105 +79,49 @@
                             </a>
                         </li>
                         <li>
-                            <a href="cabinet-admin-index.html" title="">
-                                <span>личный кабинет</span>
+                            <a href="cabinet-admin-rulers.html" title="">
+                                <span>правила корзины</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cabinet-admin-rulers-add.html" title="">
+                                <span>Добавить правило</span>
                             </a>
                         </li>
                     </ul>
-                    <h1>Действующие купоны</h1>
-                    <div class="main-cabinet-button__group">
-                        <a href="#" class="btn btn_black" title="">
-                        <span class="icon-plus">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                 y="0px"
-                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g>
-	<g>
-		<path d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216
-			v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"/>
-	</g>
-</g>
-</svg>
+                    <h1>Добавить правило</h1>
 
-                        </span>
-                            Добавить купон
-                        </a>
-                    </div>
+                    <form method="post" class="form-coupons form-rulers form-admin-cabinet">
+                        <div class="form-rulers__wrapper">
+                            <label>
+                                <span class="form-group__title">Выберите товар (внутренний код или название)</span>
+                                <input type="text" placeholder="" name="code">
+                            </label>
+                            <label>
+                                <span class="form-group__title">Условие для применения</span>
+                                <select name="select" class="select-admin select-form">
+                                    <option value="Больше">Больше</option>
+                                    <option value="Меньше">Меньше</option>
+                                    <option value="Больше">Больше</option>
+                                </select>
+                            </label>
+                            <label>
+                                <span class="form-group__title">Указать количество</span>
+                                <input type="text" placeholder="10" name="quantity">
+                            </label>
+                            <label>
+                                <span class="form-group__title">Применить на текушем уровне скидку, %</span>
+                                <input type="text" placeholder="" name="percent">
+                            </label>
 
-                    <div class="coupons-table_admin table w-100">
-                        <div class="table__head">
-                            <div class="table__th coupons-table__name">Название купона</div>
-                            <div class="table__th coupons-table__sale">Телефон</div>
-                            <div class="table__th coupons-table__sum">Сумма от</div>
-                            <div class="table__th coupons-table__active">Активация(0 - без ограничений) </div>
-                            <div class="table__th coupons-table__date">Дата создания</div>
-                            <div class="table__th coupons-table__delete">Удалить</div>
+                            <label class="w-100">
+                                <span class="form-group__title">Применить на текушем уровне скидку, руб</span>
+                                <input type="text" placeholder="" name="rub">
+                            </label>
                         </div>
+                        <button type="submit" class="btn btn_black">Создать правило</button>
+                    </form>
 
-                        <div class="table__body">
-                            <div class="table-body_line">
-                                <div class="table__td coupons-table__name">
-                                    <p>LIDER-3</p>
-                                </div>
-                                <div class="table__td coupons-table__sale">
-                                    <p>7 %</p>
-                                </div>
-                                <div class="table__td coupons-table__sum">
-                                    <p>5000</p>
-                                </div>
-                                <div class="table__td coupons-table__active">
-                                    <p>0</p>
-                                </div>
-                                <div class="table__td coupons-table__date">
-                                    <p>2020-06-20</p>
-                                </div>
-                                <div class="table__td coupons-table__delete">
-                                    <a href="#" class="btn-delete" title=""><img src="images/delete.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="table-body_line">
-                                <div class="table__td coupons-table__name">
-                                    <p>LIDER-3</p>
-                                </div>
-                                <div class="table__td coupons-table__sale">
-                                    <p>7 %</p>
-                                </div>
-                                <div class="table__td coupons-table__sum">
-                                    <p>5000</p>
-                                </div>
-                                <div class="table__td coupons-table__active">
-                                    <p>0</p>
-                                </div>
-                                <div class="table__td coupons-table__date">
-                                    <p>2020-06-20</p>
-                                </div>
-                                <div class="table__td coupons-table__delete">
-                                    <a href="#" class="btn-delete" title=""><img src="images/delete.svg" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="table-body_line">
-                                <div class="table__td coupons-table__name">
-                                    <p>LIDER-3</p>
-                                </div>
-                                <div class="table__td coupons-table__sale">
-                                    <p>7 %</p>
-                                </div>
-                                <div class="table__td coupons-table__sum">
-                                    <p>5000</p>
-                                </div>
-                                <div class="table__td coupons-table__active">
-                                    <p>0</p>
-                                </div>
-                                <div class="table__td coupons-table__date">
-                                    <p>2020-06-20</p>
-                                </div>
-                                <div class="table__td coupons-table__delete">
-                                    <a href="#" class="btn-delete" title=""><img src="images/delete.svg" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
             </div>

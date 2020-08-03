@@ -117,6 +117,15 @@ $('.cabinet-sidebar li a').each(function () {
     }
 });
 
+$('input[type="file"]').change(function(){
+    var value = $("input[type='file']").val();
+    $('.js-value').text(value);
+});
+
+$('.profile-info__manager_line').click(function () {
+    $(this).siblings('.block__hidden_manager').slideToggle();
+})
+
 $(".datepicker").datepicker($.datepicker.regional["ru"]);
 
 $("#buy_price").slider({

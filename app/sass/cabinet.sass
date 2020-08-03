@@ -261,6 +261,7 @@
 .btn-edit
   margin: 0 24px 0 0
   width: 25px
+  min-width: 25px
   height: 25px
 
 .btn-menu__cabinet
@@ -791,7 +792,6 @@ select
 
 //coupons
 .coupons-table_admin
-  margin: 30px 0 0
   .table__body
     font-weight: 300
 
@@ -813,4 +813,405 @@ select
 .coupons-table__delete
   width: 12%
 
+//form-admin-cabinet
+.form-admin-cabinet
+  input
+    height: 40px
+    border: solid 1px #e7e7e7
+      radius: 0
+    padding: 0 11px
+    color: #212121
+    font-size: 14px
+    font-weight: 300
+    &::placeholder
+      color: #212121
+  button
+    height: 49px
+    max-width: 220px
+    font-size: 17px
+    margin: 10px 0 0
+  .form-group__title
+    margin: 0 0 6px
+  label
+    margin: 0 0 20px
+  .file-upp
+    margin: 0 30px 0 0
+
+.form-coupons
+  max-width: 650px
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  .w-100
+    width: 100%
+    max-width: none
+  label
+    max-width: 310px
+    width: 100%
+
+
+//sales admin
+.sales-table__banner
+  width: 19%
+
+.sales-table__name
+  width: 32%
+
+.sales-table__description
+  width: 37%
+
+.sales-table__actions
+  width: 12%
+
+.main-cabinet-admin
+  .main-cabinet-button__group
+    margin: 0 0 30px
+    .btn
+      margin: 0
+
+.sales-table__admin
+  .button-group
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-around
+
+.cabinet-admin__description
+  margin: 0 0 39px
+  font-weight: 500
+
+//file
+.file-upp__wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .form-group__title
+    width: 100%
+
+.file-upp
+  cursor: pointer
+  width: 220px
+  border-radius: 5px
+  border: solid 1px #000000
+  height: 49px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  font-size: 17px
+  font-weight: bold
+  color: #000
+  margin: 0 30px 0 0
+  input[type="file"]
+    display: none
+  &:hover
+    color: $accent
+
+.js-value
+  color: #878787
+  font-size: 17px
+  font-weight: 300
+
+.file-result
+  margin: 20px 0 40px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.file-result__img
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 219px
+  margin: 0 23px 0 0
+  img
+    width: 100%
+
+.articles-table__name
+  width: 17%
+
+.articles-table__title
+  width: 22%
+
+.articles-table__description
+  width: 39%
+
+.articles-table__photo
+  width: 12%
+
+.articles-table__actions
+  width: 10%
+
+.picture-icon
+  max-width: 33px
+  width: 100%
+
+.form-add-article
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  .form-group
+    max-width: 550px
+    width: 100%
+    margin: 0 0 30px
+  .file-result__img
+    width: 150px
+
+  .form-group__file
+    max-width: 450px
+  button
+    margin: 30px 0 0 auto
+
+.editor
+  width: 100%
+
+.managers-table__name
+  width: 20%
+
+.managers-table__phone
+  width: 21%
+
+.managers-table__phone-add
+  width: 15%
+
+.managers-table__mail
+  width: 23%
+
+.managers-table__photo
+  width: 21%
+
+.photo-manager
+  max-width: 110px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+.form-add-manager
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  max-width: 900px
+  .form-group
+    max-width: 310px
+    margin: 0 50px 0 0
+    &:last-child
+      margin: 0
+  .file-result__img
+    width: 300px
+  .form-group__file
+    max-width: 400px
+    margin-right: 0
+
+.rulers-table__code
+  width: 15%
+
+.rulers-table__name
+  width: 37%
+
+.rulers-table__sale, .rulers-table__condition, .coupons-table__active, .rulers-table__delete, .rulers-table__quantity
+  width: 12%
+
+.form-rulers
+  max-width: none
+  label
+    max-width: none
+    &:last-child
+      margin: 0
+  input
+    border: solid 1px #000000
+  button
+    margin: 30px 0 0
+
+.form-rulers__wrapper
+  border: solid 1px #e7e7e7
+  width: 100%
+  padding: 30px
+
+.select-form
+  width: 100%
+  height: 40px
+  border: solid 1px #000000
+  padding: 0 11px
+  background-position: 98% center
+
+.table-profile__admin
+  .info-orders__table_phone, .info-orders__table_name
+    width: 22%
+
+.info-orders__table_address
+  width: 33%
+
+.info-orders__table_mail
+  width: 23%
+
+.attention-profile
+  display: flex
+  align-items: center
+  font-size: 18px
+  font-family: $myriad
+  color: #000
+  margin: 0 0 60px
+  font-weight: 400
+  &:last-child
+    margin: 0
+
+.attention-profile__icon
+  margin: 0 15px 0 0
+  width: 28px
+  min-width: 28px
+  height: 25px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.info-orders__table_requisites
+  width: 25%
+
+.info-orders__table_full-name
+  width: 17%
+
+.info-orders__table_address-pay
+  width: 22%
+
+.info-orders__table_contacts, .info-orders__table_profile
+  width: 18%
+
+.info-orders__table_data_orders
+  width: 19%
+
+.info-orders__table_delivery_orders
+  width: 24%
+
+.info-orders__table_pay_orders
+  width: 26%
+
+.info-orders__table_sum_orders
+  width: 15%
+
+.info-orders__table_number_orders
+  width: 16%
+
+.profile-wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.profile-info__box
+  border: solid 1px #e7e7e7
+  width: 440px
+  margin: 0 25px 50px 0
+  padding: 30px
+
+.profile-info__box_title
+  margin: 0 0 30px
+  width: 100%
+  font-size: 18px
+  font-family: $myriad
+
+.list-characteristics
+  width: 100%
+  color: #212121
+
+.list-characteristics__item
+  position: relative
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  margin: 0 0 5px
+  &:last-child
+    margin: 0
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 1px
+    background: #e7e7e7
+    bottom: 2px
+    left: 0
+  p
+    padding: 0 5px 0 0
+    position: relative
+    z-index: 1
+    background: #fff
+  span
+    padding: 0 0 0 5px
+    display: inline
+    position: relative
+    z-index: 1
+    background: #fff
+    text-align: right
+
+.profile-info__manager
+  margin: 0 0 50px
+  border: solid 1px #e7e7e7
+  width: 440px
+  padding: 30px
+
+.profile-info__manager_item
+  width: 100%
+  margin: 0 0 30px
+  color: #050505
+  &:last-child
+    margin: 0
+
+
+.profile-info__manager_line
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  cursor: pointer
+  p
+    font-weight: 500
+    margin: 0 15px 0 0
+
+.profile-info__manager_name
+  display: flex
+  align-items: center
+  .icon-arrow
+    margin: 0 0 0 27px
+    width: 14px
+    height: 7px
+
+.block__hidden_manager
+  margin: 30px 0 0
+  display: none
+  p
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+
+.date-profile
+  color: #050505
+
+.profile-info__box_requisites
+  margin-right: 0
+  max-width: 534px
+  width: 100%
+
+.form-requisites
+  width: 100%
+  display: flex
+  align-items: flex-end
+  flex-wrap: wrap
+  margin: 0 0 20px
+  &:last-child
+    margin: 0
+  button
+    max-width: 220px
+    height: 49px
+    font-size: 17px
+  label
+    max-width: 532px
+    margin: 0 20px 0 0
+  input
+    height: 48px
+    padding: 0 10px
+  .form-group__title
+    margin: 0 0 10px
 

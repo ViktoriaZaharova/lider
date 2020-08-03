@@ -2724,7 +2724,9 @@ label {
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center; }
 
 .table {
   border: solid 1px #f3f3f3; }
@@ -2768,6 +2770,7 @@ label {
 
 .btn-delete {
   width: 20px;
+  min-width: 20px;
   height: 25px; }
   .btn-delete img {
     width: 100%; }
