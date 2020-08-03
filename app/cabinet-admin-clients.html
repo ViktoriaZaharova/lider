@@ -50,7 +50,7 @@
                 <div class="cabinet-sidebar">
                     <div class="btn-close__menu"></div>
                     <ul class="cabinet-menu">
-                        <li class="cabinet-menu__item"><a href="cabinet-admin-orders.html" class="cabinet-menu__links"
+                        <li class="cabinet-menu__item"><a href="cabinet-admin-orders-view.html" class="cabinet-menu__links"
                                                           title="">Заказы</a></li>
                         <li class="cabinet-menu__item"><a href="cabinet-admin-profile.html" class="cabinet-menu__links"
                                                           title="">Профили</a></li>
@@ -79,119 +79,156 @@
                             </a>
                         </li>
                         <li>
-                            <a href="cabinet-admin-articles.html" title="">
-                                <span>статьи</span>
+                            <a href="cabinet-admin-clients.html" title="">
+                                <span>Клиенты</span>
                             </a>
                         </li>
                     </ul>
-                    <h1>Статьи</h1>
+                    <h1>Клиенты</h1>
 
-                    <div class="main-cabinet-button__group">
-                        <a href="#" class="btn btn_black" title="">
-                        <span class="icon-plus">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                 y="0px"
-                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g>
-	<g>
-		<path d="M492,236H276V20c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v216H20c-11.046,0-20,8.954-20,20s8.954,20,20,20h216
-			v216c0,11.046,8.954,20,20,20s20-8.954,20-20V276h216c11.046,0,20-8.954,20-20C512,244.954,503.046,236,492,236z"/>
-	</g>
-</g>
-</svg>
-                        </span>
-                            Добавить статью
-                        </a>
-                    </div>
+                    <form method="post" class="form-search form-search__admin">
+                        <button type="submit" class="btn"><img src="images/search-grey.png" alt=""></button>
+                        <label><input type="text" name="search" placeholder="Поиск клиента по номеру телефона"></label>
+                    </form>
 
-                    <div class="sales-table__admin articles-table__admin table w-100">
+                    <div class="sales-table__admin articles-table__admin clients-table table w-100">
                         <div class="table__head">
-                            <div class="table__th articles-table__name">Название статьи</div>
-                            <div class="table__th articles-table__title">Тайтл</div>
-                            <div class="table__th articles-table__description">Дискрипшн</div>
-                            <div class="table__th articles-table__photo">Наличие фото</div>
-                            <div class="table__th articles-table__actions">Действия</div>
+                            <div class="table__th articles-table__name_clients">Имя клиента</div>
+                            <div class="table__th articles-table__phone_clients">Телефон клиента</div>
+                            <div class="table__th articles-table__manager_clients">Назначить менеджера</div>
+                            <div class="table__th articles-table__mail_client">Почта клиента</div>
+                            <div class="table__th articles-table__profile_clients">Заказы/профили</div>
                         </div>
 
                         <div class="table__body">
                             <div class="table-body_line">
-                                <div class="table__td articles-table__name">
-                                   <p>Прием заказов
-                                       до 16:00</p>
+                                <div class="table__td articles-table__name_clients">
+                                   <p>Мещерин Лев
+                                       Евгеньвич</p>
                                 </div>
-                                <div class="table__td articles-table__title">
-                                    <p>Диспенсеры для спиртовых
-                                        антисептиков</p>
+                                <div class="table__td articles-table__phone_clients">
+                                    <p>+79037410919</p>
+                                    <a href="#" class="btn btn_border btn_border_black" title="">Отправить реквизиты</a>
                                 </div>
-                                <div class="table__td articles-table__description">
-                                    <p>Нитриловые перчатки по 590 рублей</p>
+                                <div class="table__td articles-table__manager_clients">
+                                    <div class="profile-info__manager_item">
+                                        <div class="profile-info__manager_line">
+                                            <div class="profile-info__manager_name">
+                                                Виеру Дмитрий
+                                                <div class="icon-arrow"><img src="images/arrow-bottom-grey.png" alt=""></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="block__hidden_manager">
+                                            <p class="date-profile">Дата создания профиля: <span class="value-profile">12.12.2020</span></p>
+                                            <p>Всего заказов: <span class="value-profile">8</span></p>
+                                            <p>Сумма заказов: <span class="value-profile">152368 руб</span></p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="table__td articles-table__photo">
-                                    <div class="picture-icon"><img src="images/picture.svg" alt=""></div>
+                                <div class="table__td articles-table__mail_client">
+                                    <p>kristina@gmail.com</p>
+                                    <a href="#" class="btn btn_border btn_border_black" title="">Отправить реквизиты</a>
                                 </div>
-                                <div class="table__td articles-table__actions">
+                                <div class="table__td articles-table__profile_clients">
                                     <div class="button-group">
-                                        <a href="#" class="btn-edit" title="">
-                                            <img src="images/edit.svg" alt="">
+                                        <a href="#" class="links-list" title="">
+                                            <img src="images/list.png" alt="">
+                                            <span class="links-list__val">12</span>
                                         </a>
 
-                                        <a href="#" class="btn-delete" title="">
-                                            <img src="images/delete.svg" alt="">
+                                        <div class="line-decor"></div>
+
+                                        <a href="#" class="links-profile" title="">
+                                            <img src="images/user-cabinet.png" alt="">
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="table-body_line">
-                                <div class="table__td articles-table__name">
-                                    <p>Прием заказов
-                                        до 16:00</p>
+                                <div class="table__td articles-table__name_clients">
+                                    <p>Мещерин Лев
+                                        Евгеньвич</p>
                                 </div>
-                                <div class="table__td articles-table__title">
-                                    <p>Диспенсеры для спиртовых
-                                        антисептиков</p>
+                                <div class="table__td articles-table__phone_clients">
+                                    <p>+79037410919</p>
+                                    <a href="#" class="btn btn_border btn_border_black" title="">Отправить реквизиты</a>
                                 </div>
-                                <div class="table__td articles-table__description">
-                                    <p>Нитриловые перчатки по 590 рублей</p>
+                                <div class="table__td articles-table__manager_clients">
+                                    <div class="profile-info__manager_item">
+                                        <div class="profile-info__manager_line">
+                                            <div class="profile-info__manager_name">
+                                                Виеру Дмитрий
+                                                <div class="icon-arrow"><img src="images/arrow-bottom-grey.png" alt=""></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="block__hidden_manager">
+                                            <p class="date-profile">Дата создания профиля: <span class="value-profile">12.12.2020</span></p>
+                                            <p>Всего заказов: <span class="value-profile">8</span></p>
+                                            <p>Сумма заказов: <span class="value-profile">152368 руб</span></p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="table__td articles-table__photo">
-                                    <div class="picture-icon"><img src="images/picture.svg" alt=""></div>
+                                <div class="table__td articles-table__mail_client">
+                                    <p>kristina@gmail.com</p>
+                                    <a href="#" class="btn btn_border btn_border_black" title="">Отправить реквизиты</a>
                                 </div>
-                                <div class="table__td articles-table__actions">
+                                <div class="table__td articles-table__profile_clients">
                                     <div class="button-group">
-                                        <a href="#" class="btn-edit" title="">
-                                            <img src="images/edit.svg" alt="">
+                                        <a href="#" class="links-list" title="">
+                                            <img src="images/list.png" alt="">
+                                            <span class="links-list__val">12</span>
                                         </a>
 
-                                        <a href="#" class="btn-delete" title="">
-                                            <img src="images/delete.svg" alt="">
+                                        <div class="line-decor"></div>
+
+                                        <a href="#" class="links-profile" title="">
+                                            <img src="images/user-cabinet.png" alt="">
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="table-body_line">
-                                <div class="table__td articles-table__name">
-                                    <p>Прием заказов
-                                        до 16:00</p>
+                                <div class="table__td articles-table__name_clients">
+                                    <p>Мещерин Лев
+                                        Евгеньвич</p>
                                 </div>
-                                <div class="table__td articles-table__title">
-                                    <p>Диспенсеры для спиртовых
-                                        антисептиков</p>
+                                <div class="table__td articles-table__phone_clients">
+                                    <p>+79037410919</p>
+                                    <a href="#" class="btn btn_border btn_border_black" title="">Отправить реквизиты</a>
                                 </div>
-                                <div class="table__td articles-table__description">
-                                    <p>Нитриловые перчатки по 590 рублей</p>
+                                <div class="table__td articles-table__manager_clients">
+                                    <div class="profile-info__manager_item">
+                                        <div class="profile-info__manager_line">
+                                            <div class="profile-info__manager_name">
+                                                Виеру Дмитрий
+                                                <div class="icon-arrow"><img src="images/arrow-bottom-grey.png" alt=""></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="block__hidden_manager">
+                                            <p class="date-profile">Дата создания профиля: <span class="value-profile">12.12.2020</span></p>
+                                            <p>Всего заказов: <span class="value-profile">8</span></p>
+                                            <p>Сумма заказов: <span class="value-profile">152368 руб</span></p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="table__td articles-table__photo">
-                                    <div class="picture-icon"><img src="images/picture.svg" alt=""></div>
+                                <div class="table__td articles-table__mail_client">
+                                    <p>kristina@gmail.com</p>
+                                    <a href="#" class="btn btn_border btn_border_black" title="">Отправить реквизиты</a>
                                 </div>
-                                <div class="table__td articles-table__actions">
+                                <div class="table__td articles-table__profile_clients">
                                     <div class="button-group">
-                                        <a href="#" class="btn-edit" title="">
-                                            <img src="images/edit.svg" alt="">
+                                        <a href="#" class="links-list" title="">
+                                            <img src="images/list.png" alt="">
+                                            <span class="links-list__val">12</span>
                                         </a>
 
-                                        <a href="#" class="btn-delete" title="">
-                                            <img src="images/delete.svg" alt="">
+                                        <div class="line-decor"></div>
+
+                                        <a href="#" class="links-profile" title="">
+                                            <img src="images/user-cabinet.png" alt="">
                                         </a>
                                     </div>
                                 </div>

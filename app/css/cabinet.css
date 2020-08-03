@@ -1131,6 +1131,9 @@ select {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
+.sales-table__admin .table__body {
+  font-weight: 300; }
+
 .cabinet-admin__description {
   margin: 0 0 39px;
   font-weight: 500; }
@@ -1304,7 +1307,7 @@ select {
 .rulers-table__name {
   width: 37%; }
 
-.rulers-table__sale, .rulers-table__condition, .coupons-table__active, .rulers-table__delete, .rulers-table__quantity {
+.rulers-table__sale, .rulers-table__condition, .rulers-table__delete, .rulers-table__quantity {
   width: 12%; }
 
 .form-rulers {
@@ -1539,3 +1542,189 @@ select {
     padding: 0 10px; }
   .form-requisites .form-group__title {
     margin: 0 0 10px; }
+
+.articles-table__name_clients {
+  width: 15%; }
+
+.articles-table__phone_clients {
+  width: 20%; }
+
+.articles-table__manager_clients {
+  width: 24%; }
+  .articles-table__manager_clients .profile-info__manager_name .icon-arrow {
+    margin: 0 0 0 16px; }
+
+.articles-table__mail_client {
+  width: 26%; }
+
+.articles-table__profile_clients {
+  width: 15%; }
+
+.table .profile-info__manager_line {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.table .btn_border_black {
+  margin: 5px auto 0; }
+
+.links-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000; }
+
+.links-list__val {
+  margin: 0 0 0 6px; }
+
+.line-decor {
+  width: 2px;
+  height: 26px;
+  background: #000; }
+
+.btn_border_black {
+  border: solid 1px #000000;
+    border-radius: 3px;
+  color: #000000;
+  font-weight: 300;
+  font-size: 14px;
+  height: 32px;
+  letter-spacing: 0; }
+
+.form-search__admin {
+  margin: 0 0 50px;
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+  border: solid 1px #e7e7e7;
+    border-radius: 0;
+  height: 50px; }
+  .form-search__admin button {
+    left: 13px;
+    width: 17px;
+    height: 18px;
+    background: transparent;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    padding: 0;
+    position: absolute; }
+  .form-search__admin input {
+    padding: 0 20px 0 45px;
+    color: #8b8b8b;
+    height: 100%;
+    width: 100%;
+    font-size: 14px; }
+  .form-search__admin label {
+    width: 100%; }
+
+.filter-cabinet-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.filter-cabinet__box {
+  margin: 0 0 20px;
+  width: 276px; }
+  .filter-cabinet__box input, .filter-cabinet__box select {
+    width: 100%;
+    height: 36px;
+    border-radius: 0;
+    border: solid 1px rgba(0, 0, 0, 0.14); }
+  .filter-cabinet__box select {
+    color: #212121;
+    font-weight: 500;
+    font-size: 12px;
+    background-position: 96% center; }
+  .filter-cabinet__box input {
+    color: rgba(33, 33, 33, 0.5);
+    padding: 0 20px;
+    font-size: 12px;
+    font-weight: 100; }
+
+.table-orders .table__td {
+  padding: 5px;
+  border-right: none;
+  font-weight: 300; }
+
+.table-orders .table__th {
+  border-right: none; }
+
+.table-orders .table-orders__status.table__th {
+  text-align: left; }
+
+.table-orders__number {
+  width: 10%; }
+
+.table-orders__full {
+  width: 11%; }
+
+.table-orders__phone {
+  width: 14%; }
+
+.table-orders__sum {
+  width: 8%; }
+
+.table-orders__manager {
+  width: 25%; }
+
+.table-orders__manager_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 14px;
+  width: 100%; }
+  .table-orders__manager_box label {
+    width: 180px;
+    height: 24px;
+    margin: 0 12px 0 0; }
+  .table-orders__manager_box:last-child {
+    margin: 0; }
+  .table-orders__manager_box select {
+    height: 24px;
+    padding: 0 12px;
+    color: #212121;
+    font-size: 13.5px;
+    font-weight: 500;
+    background-position: 96% center; }
+  .table-orders__manager_box p {
+    color: rgba(33, 33, 33, 0.63); }
+
+.table-orders__status {
+  width: 14%; }
+
+.select-choose {
+  height: 36px;
+  width: 100%;
+  border: solid 1px rgba(0, 0, 0, 0.14);
+  background-position: 96% center;
+  font-size: 11px;
+  padding: 0 15px; }
+
+.table-orders__comment {
+  width: 18%; }
+  .table-orders__comment textarea {
+    width: 100%;
+    height: 86px;
+    border: solid 1px #d2d2d2;
+      border-radius: 0;
+    padding: 8px;
+    color: rgba(33, 33, 33, 0.63);
+    font-size: 12px;
+    font-family: "museo", sans-serif;
+    font-weight: 300; }
