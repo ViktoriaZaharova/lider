@@ -94,6 +94,7 @@ gulp.task('clean', function() {
 });
 gulp.task('build', ['clean', 'sass', 'sass-mobile', 'jquery', 'img'], function(){
   var buildCss = gulp.src([
+    'app/css/cabinet.css',
     'app/css/style.css',
     'app/css/mobile.css',
     'app/css/libs.min.css'
