@@ -1,3 +1,52 @@
+@font-face {
+  font-family: "museo";
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-100.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-100.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-100.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "museo";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "museo";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "museo";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "museo";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-900.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "myriad";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/MyriadPro/MyriadPro-Bold.eot");
+  src: url("../fonts/MyriadPro/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "myriad";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/MyriadPro/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format("truetype"); }
+
 .header-cabinet {
   padding: 33px 0;
   border: none; }

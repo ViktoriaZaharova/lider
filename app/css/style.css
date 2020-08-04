@@ -114,6 +114,9 @@ body {
 html, body {
   overflow-x: hidden; }
 
+.fixed-menu {
+  overflow: hidden; }
+
 img {
   display: block;
   max-width: 100%;
@@ -325,6 +328,10 @@ input {
 .col-14 {
   width: 14.2%; }
 
+.col-16 {
+  width: 16.66%;
+  padding: 0 15px; }
+
 .col-50 {
   width: 50%; }
 
@@ -449,7 +456,7 @@ footer {
 .main-menu__links {
   color: #222222;
   font-size: 19.5px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.98px; }
   .main-menu__links:hover {
     color: #ff393c; }
@@ -756,8 +763,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%; }
@@ -772,7 +780,7 @@ header {
     color: #ff393c; }
 
 .menu-category__item {
-  margin: 0 0 28px; }
+  margin: 0 5px 28px; }
 
 .main-home {
   margin: 20px 0 0; }
@@ -986,7 +994,7 @@ header {
   text-align: center; }
 
 .btn_sorting {
-  width: 98px;
+  width: 93px;
   height: 30px;
   margin: 0 4px 0 0;
   border: solid 1px rgba(35, 31, 32, 0.28);
@@ -1003,7 +1011,7 @@ header {
 
 .product-card__body_bottom {
   border-top: 1px solid #ebebeb;
-  padding: 15px 28px 0; }
+  padding: 15px 22px 0; }
 
 .product-card__title {
   color: #000000;
@@ -1036,12 +1044,12 @@ header {
   width: 100%; }
 
 .item-sale {
-  left: 19px;
+  left: 13px;
   padding: 0 5px;
   text-transform: uppercase; }
 
 .item-availability {
-  right: 19px;
+  right: 13px;
   padding: 0 5px; }
 
 .btn__add_card {
@@ -1095,7 +1103,7 @@ header {
       color: #fff; }
 
 .amount__text {
-  width: 45px;
+  width: 35px;
   height: auto;
   border: none;
     border-radius: 0;
@@ -1280,7 +1288,7 @@ label {
             justify-content: space-between; }
 
 .footer-menu__links {
-  font-weight: 100;
+  font-weight: 300;
   color: #222;
   line-height: 1.63; }
   .footer-menu__links:hover {
@@ -1344,9 +1352,9 @@ label {
     display: flex; }
   .mobile-menu .box__schedule {
     display: block;
-    margin: 30px auto; }
+    margin: 10px auto; }
   .mobile-menu .logo__img {
-    max-width: 150px; }
+    max-width: 100px; }
   .mobile-menu .logo-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2777,6 +2785,12 @@ label {
 
 .basket__table_title {
   color: #3451bc; }
+
+.sale__text {
+  border: solid 1px #ff393c;
+  padding: 5px;
+  background: #fff;
+  margin: 5px 0 0; }
 
 .amount-table span {
   background: transparent;

@@ -77,12 +77,14 @@ $('.menu__fixed_search').click(function (e) {
 
 $('.btn_filter').click(function (e) {
     e.preventDefault();
+    $('body, html').addClass('fixed-menu')
     $('.overlay').fadeIn();
     $('.sidebar').fadeIn();
 });
 
 $('.sidebar .btn-close__menu').click(function (e) {
     e.preventDefault();
+    $('body, html').removeClass('fixed-menu');
     $('.sidebar').fadeOut();
     $('.overlay').fadeOut();
 });
@@ -126,7 +128,6 @@ $('.profile-info__manager_line').click(function () {
     $(this).siblings('.block__hidden_manager').slideToggle();
 })
 
-$(".datepicker").datepicker($.datepicker.regional["ru"]);
 
 $("#buy_price").slider({
     range: true,
