@@ -1005,8 +1005,6 @@
       margin: 0; }
   .col-14 {
     padding: 0 10px; }
-  .content-wrapper .col-20 {
-    width: 100%; }
   .product-card {
     margin: 0 0 20px; }
   .footer-menu__links {
@@ -1450,7 +1448,9 @@
   .product__quantity_box .amount__text {
     width: 45px; }
   .line__quantity {
-    margin: 0 0 10px; } }
+    margin: 0 0 10px; }
+  .content-wrapper .col-20 {
+    width: 50%; } }
 
 @media only screen and (max-width: 530px) {
   .opportunities__box {

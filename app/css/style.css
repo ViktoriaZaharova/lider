@@ -179,7 +179,8 @@ button {
   font-size: 20px;
   font-weight: bold; }
   .btn_black:hover {
-    background: #ff393c; }
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
 
 .button__group {
   width: 100%;
