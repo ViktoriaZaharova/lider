@@ -65,6 +65,10 @@ $('.btn__mobile_catalog').click(function (e) {
     $('.header__bottom').fadeIn();
 });
 
+$('.btn-catalog').on('click', function () {
+    $('.catalog-menu').fadeToggle();
+});
+
 $('.header__bottom .btn-close__menu').click(function () {
     $('.header__bottom').fadeOut();
     $('.overlay').fadeOut();
