@@ -33,8 +33,6 @@
   .logo
     font-size: 16px
 
-  .form-search__wrapper
-    max-width: 500px
 
   .phone, .header__box span, .footer__box .phone
     font-size: 16px
@@ -126,7 +124,7 @@
   .form-add-article .form-group
     max-width: 450px
 
-  .header__center .form-search
+  .form-search__wrapper
     max-width: 500px
 
 @media only screen and (max-width : 1370px)
@@ -163,6 +161,10 @@
 
   .promo-code
     font-size: 18px
+
+  header .search__result_line-content .code_search_ajax
+    max-width: none
+    text-align: right
 
 @media only screen and (max-width : 1300px)
   .basket__wrapper
@@ -310,7 +312,7 @@
 
 @media only screen and (max-width : 1199px)
   .header-sale-banner
-    font-size: 24px
+    font-size: 22px
 
   .basket__val
     font-size: 16px
@@ -476,7 +478,7 @@
   .catalog-menu-list
     width: 300px
 
-  .header__center .form-search
+  .form-search__wrapper
     width: 400px
 
   .form-search input
@@ -492,6 +494,18 @@
 
   .banner-box h3
     font-size: 30px
+
+  .search__result_line-content .btn
+    max-width: 90px
+    height: 35px
+    margin: -25px 0 0 auto
+
+  .search__result_line-content .code_search_ajax
+    font-size: 11px
+    padding: 0 100px 0 0
+
+  .search__result_line-content .price
+    font-size: 16px
 
 @media only screen and (max-width : 1160px)
   .content-wrapper .col-20
@@ -965,7 +979,7 @@
   .location-icon
     width: 18px
 
-  .header__center .form-search
+  .form-search__wrapper
     width: 300px
 
   .form-search
@@ -973,12 +987,6 @@
       width: 25px
       margin: 0 10px 0 0
 
-  .main-home
-    .row
-      width: calc(100% + 30px)
-      margin: 0 -15px
-    .col-70, .col-30
-      padding: 0 15px
 
   .banner-box h3
     padding: 0 40px
@@ -1013,6 +1021,12 @@
 
   .managers-table__phone-add
     width: 18%
+
+  .search__result_line-content .btn
+    margin: 10px auto 0
+
+  header .search__result_line-content .code_search_ajax
+    padding: 0
 
 @media only screen and (max-width : 860px)
   .home-category__links
@@ -1135,7 +1149,7 @@
   .catalog-menu__dropdown-list
     column-count: 1
 
-  .header__center .form-search
+  .form-search__wrapper
     width: 250px
     input
       height: 42px
@@ -1364,7 +1378,6 @@
 
   .header-sale-banner
     font-size: 18px
-    padding: 10px 0
 
   header
     margin: 0
@@ -2064,7 +2077,7 @@
   .link-cabinet__icon
     width: 25px
 
-  .header__center .form-search
+  .form-search__wrapper
     display: none
 
   .btn-catalog
